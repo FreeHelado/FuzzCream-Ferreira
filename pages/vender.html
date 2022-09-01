@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUZZ CREAM</title>
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <!-- Cabezal -->
+    <header>
+        <section class="cabezal">
+            <img class="cabezal__logo" src="../assets/logo.png" alt="Logo del Helado"/>
+            <nav class="cabezal__menu">
+                <div class="cabezal__menu--accesos">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="./productos.html">Productos</a></li>
+                        <li><a href="./nosotros.html">Nosotros</a></li>
+                        <li><a href="https://reverb.com/" target="_blank">Blog</a></li>
+                    </ul>
+                
+                </div>
+                <div class="cabezal__menu--botones">
+                    <ul>
+                        <li><a href="./producto.html">Comprar</a></li>
+                        <li ><a href="./vender.html">Vender</a></li>
+                    </ul>
+                </div>
+                <div class="cabezal__menu--mobile">
+                    <span><img src="../assets/ico-menu.svg" alt="icono de menú"></span>
+                    <a href="./vender.html">Vender</a>
+                </div>
+
+            </nav>
+            
+                
+            
+        </section>
+    </header>
+    <!-- Fin del Cabezal -->
+    
+    <!-- Cuerpo del Sitio -->
+    <main>
+        <!-- Publicar Producto -->
+        <div class="publicar">
+        <section class="publicar__intro">
+            <h2>Publicar Producto</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        </section>
+        
+        <section>
+            <form action="" class="publicar__form"">
+                <div class="publicar__form--marca">
+                    <label for="titulo">Titulo del Producto</label>
+                    <input type="search" name="" id="titulo" placeholder="Titulo del Producto"/>
+                </div>    
+                <div class="publicar__form--modelo">
+                    <label for="marca">Marca</legend>
+                    <select name="" id="marca">
+                        <option>Fender</option>
+                        <option>Gretsch</option>
+                        <option>Gibson</option>
+                    </select>
+                </div>
+                
+                <div class="publicar__form--precio">
+                    <label for="precio">Precio</label>
+                    <div class="publicar__form--moneda">
+                        <input type="radio" name="moneda" id="pesos" value="pesos" checked/>
+                        <label for="pesos">$ Pesos </label>
+                        <input type="radio" name="moneda" id="dolares" value="dolares"/>
+                        <label for="dolares">Dolares </label>
+                    </div>
+                    <div class="publicar__form--valor">
+                        <input type="search" name="" id="precio" placeholder="$ Precio"/>
+                    </div>
+                </div>
+                
+                <div class="publicar__form--imagenes">
+                    <label for="imagen">Subir Imagen principal</label>
+                    <input type="file" name="" id="imagen"/>
+                    <a href="">+ Agregar Foto</a>
+                </div>
+                
+                <label>Descripción del producto </label>
+                <textarea cols="20" rows="5" placeholder="Descripción Principal"></textarea>
+
+                <label>iframe del Video</label>
+                <textarea cols="20" rows="5" placeholder="Video Review"></textarea>
+
+                <div class="publicar__form--cambio">
+                    <div class="publicar__form--acepto">
+                        <input type="checkbox" name="" id="terminos"/>
+                        <label for="terminos">Aceptar instrumentos</label>
+                    </div>
+
+                    <div>
+                        <label for="buscar">Selección y búsqueda de instrumentos</label>
+                        <input type="search" name="" id="buscar"/>
+                    </div>
+                </div>
+
+                <button type="submit">PUBLICAR</button>
+            </form>
+        </section>
+    </div>
+
+    </main>
+    <!-- Pie -->
+    <footer class="pie">
+        <section class="pie__menu">
+            <ul>
+                <li><a href="./nosotros.html">Contacto</a></li>
+                <li><a href="">Ayuda</a></li>
+                <li><a href="">Términos y Condiciones</a></li>
+            </ul>
+        </section>
+        <section class="pie__redes">
+            <ul>
+                <li class="pie__redes--titulo">SEGUINOS EN</li>
+                <li><a href="">Facebook</li></a>
+                <li><a href="">Twitter</li></a>
+                <li><a href="">Instagram</li></a>
+            </ul>
+        </section>
+    </footer>
+</body>
+</html>
