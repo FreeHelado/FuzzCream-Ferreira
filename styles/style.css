@@ -295,9 +295,15 @@ header {
     border: 1px solid #e9e9e9;
     padding: 15px;
     display: inline-block;
-    box-shadow: 10px 10px 10px -10px rgba(0,0,0, 40%);
     margin: 0 15px 15px 0;
     position: relative;
+    transition: all 0.3s;
+}
+
+.producto:hover {
+    box-shadow: 10px 10px 10px -10px rgba(0,0,0, 40%);
+    border: 3px solid #feaa7e;
+    transform: translateY(5px);
 }
 
 .producto__imagen {
