@@ -44,7 +44,7 @@ p {
 
 header {
     display: inline-block;
-    background-color: #fff;
+    background-color: #2e1d35;
     position: sticky;
     top: 0;
     width: 100%;
@@ -82,7 +82,7 @@ header {
     margin-left: 25px;   
 }
 .cabezal__menu--accesos li a {
-    color: #262626;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -102,8 +102,8 @@ header {
 }
 
 .cabezal__menu--botones li a {
-    color: #fff;
-    background-color: #feaa7e;
+    color: #2e1d35;
+    background-color: #fff;
     border-radius: 5px;
     margin-right: 15px;
     padding: 10px 30px;
@@ -111,7 +111,8 @@ header {
     transition: all 0.5s;
 }
 .cabezal__menu--botones li a:hover {
-    background-color: #1a2333;
+    background-color: #feaa7e;
+    color: #fff;
 }
 
 
