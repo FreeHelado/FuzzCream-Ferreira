@@ -517,7 +517,7 @@ header {
 }
 
 .producto-ampliado__imagen--img {
-    width: 700px;
+    width: 100%;
 }
 
 .producto-ampliado__info {
@@ -580,18 +580,18 @@ header {
     background-color: #fff;
     border: solid 3px #feaa7e;
     border-radius: 5px;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 14px;
+    font-weight: 700;
     padding: 10px 30px;
     text-decoration: none;
     display: block;
     text-align: center;
+    transition: all 0.5s;
 }
 .producto-ampliado__boton a:hover {
     background-color: #1a2333;
     border: solid 3px #1a2333;
     color: #fff;
-
 }
 
 .producto-ampliado__video {
