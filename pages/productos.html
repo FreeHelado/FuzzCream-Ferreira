@@ -64,8 +64,45 @@
     
     <!-- Cuerpo del Sitio -->
     <main>
+        <!-- FILTROS BOOTSTRAP -->
+        <section>
+            <div class="container mt-4 mb-4">
+                <form class="row align-items-center">
+                    <div class="col-12 col-md mb-2">
+                        <label class="visually-hidden" for="autoSizingSelect">Marca</label>
+                        <select class="form-select" id="autoSizingSelect">
+                            <option selected>Filtrar por marca...</option>
+                            <option value="1">Fender</option>
+                            <option value="2">Boss</option>
+                            <option value="3">Electro Harmonix</option>
+                        </select>
+                        </div>
+                    
+                    <div class="col-12 col-md mb-2">
+                    <label class="visually-hidden" for="autoSizingSelect">Tipo</label>
+                    <select class="form-select" id="autoSizingSelect">
+                        <option selected>Filtrar por Efecto...</option>
+                        <option value="1">Fuzz</option>
+                        <option value="2">Reverb</option>
+                        <option value="3">Delay</option>
+                    </select>
+                    </div>
+
+                    <div class="col-12 col-md mb-2">
+                        <label for="customRange1" class="form-label">Filtrar por precio</label>
+                        <input type="range" class="form-range" id="customRange1">
+                    </div>
+                    
+                    <div class="col-12 col-md-auto">
+                    <button type="submit" class="buscador-listado__btn">BUSCAR</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- FIN DE FILTROS -->
+        
         <!-- Filtros -->
-        <section class="buscador-listado">
+        <!-- <section class="buscador-listado">
             <form action="" class="buscador-listado__form">
                 <div class="buscador-listado__form--filtro">
                     <legend>Marca</legend>
@@ -93,7 +130,7 @@
             </div>
                 <button type="submit">BUSCAR</button>
             </form>
-        </section>
+        </section> -->
         <!-- Fin de Filtros -->
     
         <!-- Productos -->
