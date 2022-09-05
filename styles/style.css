@@ -326,6 +326,16 @@ header {
     margin-bottom: 10px;
 }
 
+.carousel-control-prev-icon {
+    background-color: #262626;
+    border-radius: 50%;
+}
+
+.carousel-control-next-icon {
+    background-color: #262626;
+    border-radius: 50%;
+}
+
 .producto__sale {
     position: absolute;
     top: 20px;
