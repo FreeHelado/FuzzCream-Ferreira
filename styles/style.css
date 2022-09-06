@@ -48,8 +48,6 @@ header {
     position: sticky;
     top: 0;
     width: 100%;
-    /* padding: 20px; */
-    box-shadow: 0 0px 5px 5px rgba(0,0,0, 0.25);
     z-index: 1;
 }
 
@@ -204,8 +202,9 @@ header {
     width: 100%;
     height: 500px;
     background-image: url("../assets/gretsch-streamliner-slide.jpg");
-    background: #2e1d35;
-    background: linear-gradient(90deg, rgba(46,29,53,1) 0%, rgba(92,48,110,1) 35%, rgba(254,170,126,1) 100%);
+    background: rgb(46,29,53);
+    background: rgb(46,29,53);
+    background: linear-gradient(180deg, rgba(46,29,53,1) 16%, rgba(160,131,172,1) 56%, rgba(126,217,254,1) 97%);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -688,6 +687,76 @@ header {
 
 
 /* ///// Formulario Publicar ///// */
+
+/* formulario bootstrap */
+.publicar__bg {
+    background-color: #2e1d35;
+    color: #fff;
+}
+
+.publicar__form--b {
+    border: solid 1px #555d66;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+.publicar__form--b button {
+    width: 100%;
+    height: 50px;
+    background-color: #feaa7e;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.publicar__form--b input {
+    background-color: #26182c;
+    border-color: #555d66;
+    color: #99a8b8;
+    font-size: 14px;
+}
+
+.publicar__form--b input:focus {
+    background-color: #1a121d;
+    color: #fff;
+} 
+
+.publicar__form--b select {
+    background-color: #26182c;
+    border-color: #555d66;
+    color: #99a8b8;
+    font-size: 14px;
+}
+
+.publicar__form--b select:focus {
+    background-color: #1a121d;
+    color: #fff;
+} 
+
+.publicar__form--b textarea {
+    background-color: #26182c;
+    border-color: #555d66;
+    color: #99a8b8;
+    font-size: 14px;
+}
+
+.publicar__form--b textarea:focus {
+    background-color: #1a121d;
+    color: #fff;
+} 
+
+.publicar__form--b a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+} 
+
+.publicar__form--b a:hover {
+    color: #feaa7e;
+    text-decoration: none;
+} 
 
 .publicar {
     display: grid;

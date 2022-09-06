@@ -2,130 +2,158 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FUZZ CREAM</title>
+    <!-- Bootstrap con CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"/> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"/>
+    </script>
     <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../styles/style.css">
+    <title>FUZZ CREAM</title>
 </head>
 <body>
     <!-- Cabezal -->
     <header>
-        <section class="cabezal">
-            <img class="cabezal__logo" src="../assets/logo.png" alt="Logo del Helado"/>
-            <nav class="cabezal__menu">
-                <div class="cabezal__menu--accesos">
-                    <ul>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="./productos.html">Productos</a></li>
-                        <li><a href="./nosotros.html">Nosotros</a></li>
-                        <li><a href="https://reverb.com/" target="_blank">Blog</a></li>
+        <!-- NAVBAR BOOTSTRAP -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">
+                <img class="cabezal__logo" src="../assets/logo.png" alt="Logo del Helado"/>
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse align-items-baseline" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto me-5 mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="./productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Productos
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Guitarras</a></li>
+                      <li><a class="dropdown-item" href="./productos.html">Pedales</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Amplificadores</a></li>
                     </ul>
-                
-                </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                  </li>
+                  
+                </ul>
                 <div class="cabezal__menu--botones">
-                    <ul>
-                        <li><a href="./producto.html">Comprar</a></li>
-                        <li ><a href="./vender.html">Vender</a></li>
-                    </ul>
+                    <a href="./producto.html">Comprar</a></li>
+                    <a href="./vender.html">Vender</a></li>
+                    
                 </div>
-                <div class="cabezal__menu--mobile">
-                    <span><img src="../assets/ico-menu.svg" alt="icono de menú"></span>
-                    <a href="./vender.html">Vender</a>
-                </div>
-
-            </nav>
-            
-                
-            
-        </section>
+              </div>
+            </div>
+          </nav>
+        <!-- FIN NAV BAR BOOTSTRAP -->
     </header>
     <!-- Fin del Cabezal -->
     
-    <!-- Cuerpo del Sitio -->
-    <main>
-        <!-- Publicar Producto -->
-        <div class="publicar">
-        <section class="publicar__intro">
-            <h2>Publicar Producto</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+    <!-- Form con Bootstrap  -->
+    <main class="publicar__bg">
+        <section class="container">
+            <div class="row justify-content-center py-5">
+                <div class="col-12 col-lg-6">
+                    <form class="publicar__form--b">
+                        <div class="mb-3">
+                          <label for="titulo" class="form-label">Titulo del Producto</label>
+                          <input type="text" class="form-control" id="titulo" aria-describedby="tituloHelp">
+                          <div id="tituloHelp" class="form-text">Ingrese de forma clara el título del producto. Ej: Pedal marca Boss</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputState" class="form-label">Categoría</label>
+                            <select id="inputState" class="form-select">
+                              <option selected>Seleccione la categoría</option>
+                              <option>Pedales</option>
+                              <option>Guitarra</option>
+                              <option>Teclados</option>
+                              <option>Bajos</option>
+                              <option>Accesorios</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="exampleDataList" class="form-label">Ingrese la Marca</label>
+                            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Comenzá a escribir...">
+                            <datalist id="datalistOptions">
+                            <option value="Fender">
+                            <option value="Boss">
+                            <option value="Gretsch">
+                            <option value="Gibson">
+                            <option value="Electric Harmonix">
+                            </datalist>
+                        </div>
+                          
+                        <div class="mb-3">
+                            <label for="inputState" class="form-label me-3">Precio</label>
+                            
+                            <input type="radio" class="btn-check" name="options-outlined" id="primary-outlined" autocomplete="off" checked>
+                            <label class="btn btn-outline-primary me-2" for="primary-outlined">$ Pesos</label>
+
+                            <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined" autocomplete="off">
+                            <label class="btn btn-outline-danger" for="danger-outlined">USD Dolares</label>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="titulo" placeholder="$ Ingrese el precio">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="formFile" class="form-label">Imágen del Producto</label>
+                            <input class="form-control" type="file" id="formFile">
+                        </div>
+
+                        <div class="mb-3">
+                            <a href=""><i class="bi bi-images"></i> + AGREGAR IMÁGENES</a>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Descripción</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          </div>
+
+                        
+                        <button type="submit">Submit</button>
+                      </form>
+                </div>
+            </div>
         </section>
-        
-        <section>
-            <form action="" class="publicar__form"">
-                <div class="publicar__form--marca">
-                    <label for="titulo">Titulo del Producto</label>
-                    <input type="search" name="" id="titulo" placeholder="Titulo del Producto"/>
-                </div>    
-                <div class="publicar__form--modelo">
-                    <label for="marca">Marca</legend>
-                    <select name="" id="marca">
-                        <option>Fender</option>
-                        <option>Gretsch</option>
-                        <option>Gibson</option>
-                    </select>
-                </div>
-                
-                <div class="publicar__form--precio">
-                    <label for="precio">Precio</label>
-                    <div class="publicar__form--moneda">
-                        <input type="radio" name="moneda" id="pesos" value="pesos" checked/>
-                        <label for="pesos">$ Pesos </label>
-                        <input type="radio" name="moneda" id="dolares" value="dolares"/>
-                        <label for="dolares">Dolares </label>
-                    </div>
-                    <div class="publicar__form--valor">
-                        <input type="search" name="" id="precio" placeholder="$ Precio"/>
-                    </div>
-                </div>
-                
-                <div class="publicar__form--imagenes">
-                    <label for="imagen">Subir Imagen principal</label>
-                    <input type="file" name="" id="imagen"/>
-                    <a href="">+ Agregar Foto</a>
-                </div>
-                
-                <label>Descripción del producto </label>
-                <textarea cols="20" rows="5" placeholder="Descripción Principal"></textarea>
-
-                <label>iframe del Video</label>
-                <textarea cols="20" rows="5" placeholder="Video Review"></textarea>
-
-                <div class="publicar__form--cambio">
-                    <div class="publicar__form--acepto">
-                        <input type="checkbox" name="" id="terminos"/>
-                        <label for="terminos">Aceptar instrumentos</label>
-                    </div>
-
-                    <div>
-                        <label for="buscar">Selección y búsqueda de instrumentos</label>
-                        <input type="search" name="" id="buscar"/>
-                    </div>
-                </div>
-
-                <button type="submit">PUBLICAR</button>
-            </form>
-        </section>
-    </div>
-
     </main>
     <!-- Pie -->
     <footer class="pie">
-        <section class="pie__menu">
-            <ul>
-                <li><a href="./nosotros.html">Contacto</a></li>
-                <li><a href="">Ayuda</a></li>
-                <li><a href="">Términos y Condiciones</a></li>
-            </ul>
-        </section>
-        <section class="pie__redes">
-            <ul>
-                <li class="pie__redes--titulo">SEGUINOS EN</li>
-                <li><a href="">Facebook</li></a>
-                <li><a href="">Twitter</li></a>
-                <li><a href="">Instagram</li></a>
-            </ul>
-        </section>
+        <div class="container mt-3">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-12 col-md-auto">
+                <section class="pie__menu">
+                    <ul>
+                        <li><a href="./nosotros.html">Contacto</a></li>
+                        <li><a href="">Ayuda</a></li>
+                        <li><a href="">Términos y Condiciones</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="col-12 col-md-auto">
+                <section class="pie__redes">
+                    <ul>
+                        <li class="pie__redes--titulo">SEGUINOS EN</li>
+                        <li><a href=""><i class="bi bi-facebook me-2"></i>Facebook</li></a>
+                            <li><a href=""><i class="bi bi-twitter me-2"></i>Twitter</li></a>
+                            <li><a href=""><i class="bi bi-instagram me-2"></i>Instagram</li></a>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
     </footer>
 </body>
 </html>
