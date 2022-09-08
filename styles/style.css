@@ -769,6 +769,8 @@ header {
     }
   }
 
+
+
 /*////// Buscador - listado ///// */
 
 .buscador-listado {
@@ -1299,6 +1301,16 @@ header {
     .publicar {
         grid-template-columns: repeat(1, 1fr);
         
+    }
+
+    .producto-historia {
+        flex-direction: column;
+    }
+
+    .producto-historia__intro h2 {
+        font-size: 50px;
+        padding: 30px 0 10px 30px;
+        font-family: 'Abril Fatface', cursive;
     }
 
 }
