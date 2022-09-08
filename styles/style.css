@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700;800;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -202,9 +202,6 @@ header {
     width: 100%;
     height: 500px;
     background-image: url("../assets/gretsch-streamliner-slide.jpg");
-    background: rgb(46,29,53);
-    background: rgb(46,29,53);
-    background: linear-gradient(180deg, rgba(46,29,53,1) 16%, rgba(160,131,172,1) 56%, rgba(126,217,254,1) 97%);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -214,7 +211,21 @@ header {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
+    /* animation: zoom-bg 20s ease infinite; */
 }
+
+
+@keyframes zoom-bg {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.5, 1.5);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
 
 .buscador__titulo {
     text-align: center;
@@ -292,10 +303,12 @@ header {
 
 .productos-home {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1350px;
     padding: 25px;
+    gap: 15px;
+    margin-bottom: 25px;
 }
 
 .productos-home__titulo {
@@ -403,7 +416,6 @@ header {
     display: inline-block;
     position: relative;
     transition: all 0.3s;
-    margin-bottom: 20px;
 }
 
 .producto-secundario:hover {
@@ -654,6 +666,108 @@ header {
     width: 700px;
     height: 500px;
 }
+
+.atributos {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border: solid 1px #e9e9e9;
+    padding: 15px;
+}
+
+.atributos h4 {
+    padding: 10px 0;
+    font-weight: 700;
+}
+
+.atributos ul {
+    margin-left: 0;
+    padding: 0;
+    font-size: 15px;
+    
+}
+
+.atributos__nombre {
+    text-align: left;
+    font-weight: 600;
+    padding-left: 10px;
+}
+.atributos__valor {
+    text-align: left;
+    font-weight: 300;
+}
+
+.atributos li {
+    list-style-type: none;
+    margin-left: 0;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+
+.atributos li:nth-child(odd) {
+    background-color: #e9e9e9;
+}
+
+.atributos li:first-child {
+    color: #1f3f7a;
+}
+
+.producto-historia {
+    display: flex;
+    margin-bottom: 50px;
+    border-top: solid 1px #e9e9e9;
+    border-bottom: solid 1px #e9e9e9;
+}
+
+.producto-historia__intro {
+    font-size: 18px;
+    width: 100%;
+}
+
+.producto-historia__intro h2 {
+    font-size: 50px;
+    padding: 100px 0 10px 30px;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.producto-historia__intro h3 {
+    font-size: 26px;
+    font-weight: 700;
+    padding: 0 30px 0 30px ;
+}
+
+.producto-historia__intro p {
+    padding: 0 30px 0 30px ;
+}
+
+.producto-historia__foto {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.producto-historia__foto--bg {
+    background-image: url(../assets/space-echo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 600px;
+    animation: zoom-bg 30s ease infinite;
+}
+
+@keyframes zoom-bg {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.5, 1.5);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
 
 /*////// Buscador - listado ///// */
 
@@ -1240,7 +1354,7 @@ header {
 
 @media (max-width: 480px) {
     .productos-home {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     /* ///// Cabezal ///// */
