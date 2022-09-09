@@ -4,7 +4,7 @@
 // Productos Secundarios //
 // --------------
 
-// Buscador BG //
+// Buscador BG /////////////////////////////////////////////////////////
 .buscador {
     width: 100%;
     height: 500px;
@@ -106,7 +106,7 @@
     }
 }
 
-// Productos Destacados //
+// Productos Destacados /////////////////////////////////////////////
 .productos-home__titulo {
     font-size: 35px;
     text-align: center;
@@ -193,7 +193,7 @@
     }
 }
 
-// Productos Secundarios //
+// Productos Secundarios /////////////////////////////////////////////
 .productos-listado {
     display: grid;
     grid-template-columns: repeat(6, 1fr);

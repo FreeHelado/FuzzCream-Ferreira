@@ -1,0 +1,100 @@
+.nosotros {
+    width: 100%;
+    height: 500px;
+    background-image: url("../assets/gretsch-streamliner-slide.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 50px;
+    margin-bottom: 25px;
+    color: #fff;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    @media (max-width: $md) {
+        padding: 20px;
+    }
+    &__cont {
+        max-width: 1200px;
+        margin: 0 auto;
+        @media (max-width: $md) {
+            overflow: scroll;
+        }
+    }
+    &__titulo {
+        text-align: center;
+        font-size: 45px;
+        margin-bottom: 10px;
+        @media (max-width: $md) {
+            font-size: 30px;
+        }
+    }
+    &__contacto {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 1200px;
+        margin: 0 auto;
+        @media (max-width: $lg) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+    &__mapa {
+        width: 100%;
+        padding: 15px;
+    }
+
+    // formulario de contacto//
+    &__form {
+        display: flex;
+        flex-direction: column;
+        border: solid 1px $colorGrisClaro;
+        padding: 25px;
+        width: 100%;
+        input {
+            height: 50px;
+            border-radius: 5px;
+            padding: 10px;
+            width: 100%;
+            border: solid 1px $colorGrisClaro;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+        select {
+            height: 50px;
+            border-radius: 5px;
+            padding: 10px;
+            width: 100%;
+            border: solid 1px $colorGrisClaro;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+        label {
+            font-size: 18px;
+            font-weight: 600;
+            width: 100%;
+        }
+        textarea {
+            border: solid 1px $colorGrisClaro;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            margin: 10px 0;
+        }
+        button {
+            width: 100%;
+            height: 50px;
+            background-color: $colorSecundario;
+            border-radius: 5px;
+            border: none;
+            color: #fff;
+            font-weight: 700;
+            font-size: 18px;
+        }
+    }
+    &__intro {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        margin-right: 25px ;
+    }
+}

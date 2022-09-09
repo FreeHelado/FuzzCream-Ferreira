@@ -787,13 +787,22 @@ header {
     left: 50%;
   }
 
-  .timeline__tarjetas .contenido p {
+  .timeline__tarjetas--contenido {
+    padding: 32px;
+    background-color: white;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0px 16px 27px rgb(0 11 30 / 10%);
+    text-align: left;
+  }
+
+  .timeline__tarjetas--contenido p {
     color: #2e1d35;
     font-size: 18px;
   }
 
   
-  .timeline__tarjetas .contenido h2 {
+  .timeline__tarjetas--contenido h2 {
     font-family: 'Abril Fatface', cursive;
     font-size: 25px;
     color: #2e1d35;
@@ -805,14 +814,14 @@ header {
     width: calc(50% + 32px);
   }
   
-  .timeline__tarjetas--item .contenido {
+  /* .timeline__tarjetas--item .contenido {
     padding: 32px;
     background-color: white;
     position: relative;
     border-radius: 20px;
     box-shadow: 0px 16px 27px rgb(0 11 30 / 10%);
     text-align: left;
-  }
+  } */
   
   .timeline__tarjetas .timeline__tarjetas--item:nth-child(even) {
     left: calc(50% - 32px);
