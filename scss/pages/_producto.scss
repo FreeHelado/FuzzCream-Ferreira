@@ -306,38 +306,16 @@
             }
         }
         &--item {
-            padding: 32px;
-            background-color: white;
             position: relative;
             background-color: inherit;
             width: calc(50% + 32px);
-            display: flex;
-            border-radius: 20px;
-            box-shadow: $sombraSobreClaro;
-            text-align: left;
             @media (max-width: $md) {
                 left: 0;
                 flex-direction: row-reverse;
                 width: auto;
                 margin-bottom: 16px;
             }
-            &--contenido {
-                // padding: 32px;
-                // background-color: white;
-                // position: relative;
-                // border-radius: 20px;
-                // box-shadow: $sombraSobreClaro;
-                // text-align: left;
-                p {
-                    color: #2e1d35;
-                    font-size: 18px;
-                }
-                h2 {
-                    font-family: 'Abril Fatface', cursive;
-                    font-size: 25px;
-                    color: #2e1d35;
-                }
-            }
+            
             &:nth-child(even) {
                 left: calc(50% - 32px);
                 flex-direction: row-reverse;
@@ -345,22 +323,39 @@
                     left: 0;
                 }
             }
-            .año {
-                font-size: 22px;
-                color: #ffffff;
-                margin-bottom: 10px;
-                width: 65px;
-                height: 65px;
-                background-color: $colorPrimario;
-                border-radius: 50%;
-                flex-shrink: 0;
-                align-items: center;
-                display: flex;
-                justify-content: center;
-                z-index: 1;
-                font-family: 'Abril Fatface', cursive;
+        }
+        &--contenido {
+            padding: 32px;
+            background-color: white;
+            position: relative;
+            border-radius: 20px;
+            box-shadow: $sombraSobreClaro;
+            text-align: left;
+            p {
+                color: #2e1d35;
+                font-size: 18px;
             }
-        } 
+            h2 {
+                font-family: 'Abril Fatface', cursive;
+                font-size: 25px;
+                color: #2e1d35;
+            }
+        }
+        &--anio {
+            font-size: 22px;
+            color: #ffffff;
+            margin-bottom: 10px;
+            width: 65px;
+            height: 65px;
+            background-color: #1a2333;
+            border-radius: 50%;
+            flex-shrink: 0;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            z-index: 1;
+            font-family: 'Abril Fatface', cursive;
+          }
     }
     &-linea {
         width: 40px;

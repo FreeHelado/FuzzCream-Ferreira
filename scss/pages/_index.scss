@@ -230,6 +230,7 @@
     &:hover {
         box-shadow: $sombraHover;
         transform: scale(1.1);
+        z-index: 3;
     }
     &__imagen {
         width: 100%;
