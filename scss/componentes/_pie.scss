@@ -1,6 +1,12 @@
 .pie {
     font-size: 16px;
     height: 50px;
+    @media (max-width: $lg) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    @media (max-width: $xs) {
+        font-size: 13px;
+    }
     a {
         text-decoration: none;
         color: $negroPrimario;
@@ -10,6 +16,10 @@
         }
     }
     &__menu {
+        @media (max-width: $lg) {
+            justify-self: center;
+            margin-bottom: 15px;
+        }
         ul {
             padding: 0;
             li {
@@ -21,11 +31,15 @@
                 }
                 &:last-child::after {
                     content: '';
-                }               
+                } 
+
             }
         }
     }
     &__redes {
+        @media (max-width: $lg) {
+            justify-self: center;
+        }
         ul {
         padding: 0;
             li {
@@ -41,7 +55,12 @@
                 &:first-child::after {
                     content: '';
                 }
-            }
+                @media (max-width: $sm) {
+                    &:first-child {
+                        display: block;
+                    }
+                }
+            }   
         }
     }
     &--titulo {
