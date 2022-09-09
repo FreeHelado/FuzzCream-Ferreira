@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  color: #262626;
+  font-family: 'Lexend', sans-serif;
+  align-items: center; }
+
+h1 {
+  font-size: 60px; }
+
+h2 {
+  font-size: 45px; }
+
+h3 {
+  font-size: 30px; }
+
+h4 {
+  font-size: 20px; }
+
+p {
+  font-size: 16px; }
+
+header {
+  display: inline-block;
+  background-color: #2e1d35;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 2; }
+
+.cabezal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .cabezal__logo {
+    width: 170px;
+    margin-right: 25px; }
+  .cabezal__menu {
+    display: flex;
+    justify-content: end;
+    align-items: center; }
+    .cabezal__menu--accesos {
+      list-style-type: none;
+      font-size: 18px;
+      font-weight: 400;
+      margin-right: 40px; }
+      .cabezal__menu--accesos li {
+        display: inline;
+        margin-left: 25px; }
+        .cabezal__menu--accesos li a {
+          color: #fff;
+          text-decoration: none; }
+          .cabezal__menu--accesos li a :hover {
+            color: #feaa7e; }
+    .cabezal__menu--botones a {
+      color: #2e1d35;
+      background-color: #fff;
+      border-radius: 5px;
+      margin-right: 15px;
+      padding: 10px 30px;
+      text-decoration: none;
+      transition: all 0.5s;
+      font-size: 16px;
+      font-weight: 600; }
+      .cabezal__menu--botones a:hover {
+        background-color: #feaa7e;
+        color: #fff;
+        transform: translateX(50px); }
+    .cabezal__menu--botones li {
+      display: inline; }
+      .cabezal__menu--botones li a {
+        color: #2e1d35;
+        background-color: #fff;
+        border-radius: 5px;
+        margin-right: 15px;
+        padding: 10px 30px;
+        text-decoration: none;
+        transition: all 0.5s; }
+        .cabezal__menu--botones li a:hover {
+          background-color: #feaa7e;
+          color: #fff;
+          transform: translateX(50px); }
+
+.buscador {
+  width: 100%;
+  height: 500px;
+  background-image: url("../assets/gretsch-streamliner-slide.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 50px;
+  margin-bottom: 25px;
+  color: #fff;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center; }
+  .buscador__titulo {
+    text-align: center;
+    font-size: 45px; }
+  .buscador__form {
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 0;
+    top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 250px;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto; }
+    .buscador__form--buscar {
+      display: inline;
+      width: 100%; }
+    .buscador__form--filtro {
+      display: inline;
+      width: 100%; }
+    .buscador__form label {
+      font-size: 18px;
+      font-weight: 600; }
+    .buscador__form input {
+      margin-right: 15px;
+      height: 50px;
+      border-radius: 5px;
+      padding: 10px;
+      width: 95%;
+      border: none;
+      font-size: 16px; }
+      .buscador__form input:hover {
+        border: 2px solid #2e1d35; }
+      .buscador__form input:focus {
+        border: 2px solid #2e1d35; }
+    .buscador__form select {
+      margin-right: 15px;
+      height: 50px;
+      border-radius: 5px;
+      padding: 10px;
+      width: 95%;
+      border: none;
+      font-size: 16px; }
+    .buscador__form button {
+      width: 100%;
+      height: 50px;
+      background-color: #feaa7e;
+      border-radius: 5px;
+      border: none;
+      color: #fff;
+      font-weight: 700;
+      font-size: 18px; }
