@@ -626,7 +626,8 @@ header {
     .timeline__tarjetas--item {
       position: relative;
       background-color: inherit;
-      width: calc(50% + 32px); }
+      width: calc(50% + 32px);
+      display: flex; }
       @media (max-width: 768px) {
         .timeline__tarjetas--item {
           left: 0;
