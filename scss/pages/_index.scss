@@ -195,12 +195,9 @@
 
 // Productos Secundarios /////////////////////////////////////////////
 .productos-listado {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    margin: 0 auto;
-    max-width: 1350px;
+    @extend .container;
+    @include templateGrilla(6, 15px);
     padding: 25px;
-    gap: 15px;
     margin-bottom: 25px;
     @media (max-width: $lg) {
         grid-template-columns: repeat(4, 1fr);

@@ -9,12 +9,9 @@
 
 // Info del Producto ///////////////////////////////////////////
 .producto-ampliado {
-    padding: 15x;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    @extend .container;
+    @include templateGrilla(2, 25px);
     justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
     gap: 25px;
     margin-top: 20px;
     @media (max-width: $xl) {
