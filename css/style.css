@@ -478,6 +478,9 @@ header {
     @media (max-width: 1200px) {
       .producto-ampliado__video {
         flex-direction: column; } }
+    .producto-ampliado__video h3 {
+      color: #fff;
+      font-size: 30px; }
     .producto-ampliado__video p {
       font-size: 16px;
       line-height: 1.5;
@@ -798,6 +801,8 @@ header {
 .publicar__bg {
   background-color: #2e1d35;
   color: #fff; }
+  .publicar__bg h1 {
+    font-size: 40px; }
 
 .publicar__form--b {
   border: solid 1px #555d66;

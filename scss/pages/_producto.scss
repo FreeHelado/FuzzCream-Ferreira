@@ -124,6 +124,10 @@
         @media (max-width: $xl) {
             flex-direction: column;
         }
+        h3 {
+            color: #fff;
+            font-size: 30px;
+        }
         p {
             font-size: 16px;
             line-height: 1.5;
@@ -134,6 +138,7 @@
                 width: 100%;
             }
         }
+        
         &--iframe {
             margin: 15px;
             box-shadow: $sombraSobreOscuro;

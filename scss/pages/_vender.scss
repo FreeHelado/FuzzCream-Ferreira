@@ -1,12 +1,16 @@
 .publicar__bg {
     background-color: $colorPrimario;
     color: #fff;
+    h1 {
+        font-size: 40px;
+    }
 }
 
 .publicar__form--b {
     border: solid 1px $borde;
     padding: 25px;
     border-radius: 5px;
+    
     button {
         width: 100%;
         height: 50px;
