@@ -1,0 +1,19 @@
+{
+  "name": "FuzzCream",
+  "version": "1.0.0",
+  "description": "Entrega Sass I - Coderhouse",
+  "main": "index.js",
+  "scripts": {
+    "build-sass": "node-sass --include-path scss ./scss/style.scss ./css/style.css -w",
+    "sourcemap-sass": "node-sass --watch --source-map true scss/style.scss css/style.css"
+  },
+  "author": "Alejandro Ferreira",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.3",
+    "nodemon": "^2.0.19"
+  },
+  "dependencies": {
+    "sass-sourcemap-loader": "^0.0.1"
+  }
+}

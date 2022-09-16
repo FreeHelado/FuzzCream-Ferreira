@@ -1,0 +1,45 @@
+// -----------------
+// Buscador de Listado //
+// Listado //
+
+// Buscador de Listado //
+.buscador-listado {
+    color: $negroPrimario;
+    font-size: 15px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    &__form {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr) 200px;
+        gap: 25px;
+        align-items: center;
+        &--filtro {
+            display: flex;
+            align-items: center;
+        }  
+        legend {
+            font-size: 14px; 
+            margin-right: 10px;   
+        }
+        select {
+            height: 50px;
+            border-radius: 5px;
+            width: 100%;
+            padding: 10px;
+            border: solid 1px $colorGrisClaro;
+            display: inline;
+        }
+    }
+    &__btn {
+        background-color: $colorSecundario;
+        border-radius: 5px;
+        border: none;
+        color: #fff;
+        font-weight: 700;
+        font-size: 18px;
+        padding: 5px 25px;
+    }
+}
+
+

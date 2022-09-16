@@ -1,0 +1,71 @@
+.pie {
+    font-size: 16px;
+    height: 50px;
+    @media (max-width: $lg) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    @media (max-width: $xs) {
+        font-size: 13px;
+    }
+    a {
+        text-decoration: none;
+        color: $negroPrimario;
+        &:hover {
+            text-decoration: none;
+            color: $colorSecundario;
+        }
+    }
+    &__menu {
+        @media (max-width: $lg) {
+            justify-self: center;
+            margin-bottom: 15px;
+        }
+        ul {
+            padding: 0;
+            li {
+                display: inline;
+                margin-right: 15px;
+                &::after {
+                    content: '|';
+                    margin-left: 15px;
+                }
+                &:last-child::after {
+                    content: '';
+                } 
+
+            }
+        }
+    }
+    &__redes {
+        @media (max-width: $lg) {
+            justify-self: center;
+        }
+        ul {
+        padding: 0;
+            li {
+                display: inline;
+                margin-right: 15px;
+                &::after {
+                    content: '|';
+                    margin-left: 15px;
+                }
+                &:last-child::after {
+                    content: '';
+                }
+                &:first-child::after {
+                    content: '';
+                }
+                @media (max-width: $sm) {
+                    &:first-child {
+                        display: block;
+                    }
+                }
+            }   
+        }
+    }
+    &--titulo {
+        font-size: 16px;
+        font-weight: 900;
+    }
+        
+}

@@ -1,0 +1,63 @@
+.publicar__bg {
+    background-color: $colorPrimario;
+    color: #fff;
+    h1 {
+        font-size: 40px;
+    }
+}
+
+.publicar__form--b {
+    border: solid 1px $borde;
+    padding: 25px;
+    border-radius: 5px;
+    
+    button {
+        width: 100%;
+        height: 50px;
+        background-color: $colorSecundario;
+        border-radius: 5px;
+        border: none;
+        color: #fff;
+        font-weight: 700;
+        font-size: 18px;
+    }
+    input {
+        background-color: $campo;
+        border-color: $borde;
+        color: $texto;
+        font-size: 14px;
+        &:focus {
+            background-color: $focus;
+            color: #fff;
+        } 
+    }
+    select {
+        background-color: $campo;
+        border-color: $borde;
+        color: $texto;
+        font-size: 14px;
+        &:focus {
+            background-color: $focus;
+            color: #fff;
+        }
+    }
+    textarea {
+        background-color: $campo;
+        border-color: $borde;
+        color: $texto;
+        font-size: 14px;
+        &:focus {
+            background-color: $focus;
+            color: #fff;
+        }
+    }
+    a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 14px;
+        &:hover {
+            color: $colorSecundario;
+            text-decoration: none;
+        } 
+    } 
+}

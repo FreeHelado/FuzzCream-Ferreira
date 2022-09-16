@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://freehelado.github.io/FuzzCream-Ferreira/sitemap.xml
