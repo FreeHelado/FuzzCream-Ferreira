@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 * {
     margin: 0;
@@ -8,7 +8,7 @@
 
 body {
     color: #262626;
-    font-family: 'Lexend', sans-serif;
+    font-family: 'Poppins', sans-serif;
     align-items: center;
 }
 
@@ -36,6 +36,17 @@ p {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.tags {
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    background-color: $colorTerciarioClaro;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-block: 10px; 
+    width: fit-content;
 }
 
 // Mixins

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 * {
   margin: 0;
@@ -8,7 +8,7 @@
 
 body {
   color: #262626;
-  font-family: 'Lexend', sans-serif;
+  font-family: 'Poppins', sans-serif;
   align-items: center; }
 
 h1 {
@@ -29,6 +29,16 @@ p {
 .container, .productos-listado, .producto-ampliado {
   max-width: 1200px;
   margin: 0 auto; }
+
+.tags, .categoria__listado--producto--nuevo, .categoria__listado--producto--usado {
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #4774c7;
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin-block: 10px;
+  width: fit-content; }
 
 header {
   display: inline-block;
@@ -326,7 +336,8 @@ header {
       color: #fff;
       font-weight: 900;
       margin-bottom: 35px;
-      font-style: italic; }
+      font-style: italic;
+      text-align: center; }
       .cont-fullcrema .full-crema h1 span {
         background: -webkit-linear-gradient(45deg, #feaa7e 0%, #4774c7 100%);
         -webkit-background-clip: text;
@@ -820,6 +831,124 @@ header {
     font-weight: 700;
     font-size: 18px;
     padding: 5px 25px; }
+
+.categoria {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 25px;
+  gap: 25px; }
+  @media (max-width: 1200px) {
+    .categoria {
+      padding-inline: 20px; } }
+  @media (max-width: 768px) {
+    .categoria {
+      flex-direction: column;
+      padding-inline: 25px; } }
+  .categoria h1 {
+    font-size: 50px;
+    font-weight: 600;
+    color: #2e1d35; }
+    @media (max-width: 768px) {
+      .categoria h1 {
+        font-size: 30px; } }
+  .categoria__lateral {
+    height: 100%;
+    width: 20%;
+    position: sticky;
+    top: 125px;
+    border: 1px solid #e9e9e9;
+    border-radius: 3px;
+    padding: 20px; }
+    @media (max-width: 992px) {
+      .categoria__lateral {
+        width: 40%; } }
+    @media (max-width: 768px) {
+      .categoria__lateral {
+        width: 100%;
+        position: relative;
+        top: 0; } }
+    .categoria__lateral--container h2 {
+      font-size: 22px;
+      font-weight: 800;
+      border-bottom: 1px solid #e9e9e9;
+      padding-bottom: 15px; }
+    .categoria__lateral--container h3 {
+      font-size: 18px;
+      font-weight: 600; }
+    .categoria__lateral--container--precio input {
+      width: 100%;
+      display: block; }
+    .categoria__lateral--container--resultado span,
+    .categoria__lateral--container--resultado input {
+      display: inline;
+      border: none;
+      font-size: 16px;
+      font-weight: 600;
+      margin-top: 10px; }
+    .categoria__lateral--container--boton {
+      color: #fff;
+      background-color: #feaa7e;
+      border-radius: 3px;
+      padding: 10px;
+      font-size: 18px;
+      text-decoration: none;
+      width: 100%;
+      text-align: center;
+      margin-top: 10px;
+      border: none;
+      transition: all .3s; }
+      .categoria__lateral--container--boton:hover {
+        color: #fff;
+        background-color: #2e1d35;
+        font-weight: 600; }
+  .categoria__listado {
+    width: 80%; }
+    @media (max-width: 992px) {
+      .categoria__listado {
+        width: 60%; } }
+    @media (max-width: 768px) {
+      .categoria__listado {
+        width: 100%; } }
+    .categoria__listado--producto {
+      background-color: #fff;
+      border-radius: 3px;
+      border: 1px solid #e9e9e9;
+      padding: 15px;
+      display: inline-block;
+      position: relative;
+      transition: all 0.3s;
+      margin-bottom: 20px; }
+      .categoria__listado--producto:hover {
+        box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.4);
+        transform: scale(1.05); }
+      .categoria__listado--producto--imagen {
+        width: 100%;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        overflow: hidden; }
+      .categoria__listado--producto--titulo {
+        font-size: 16px;
+        margin: 10px 0 10px 0; }
+      .categoria__listado--producto--texto {
+        font-size: 14px;
+        margin-bottom: 10px; }
+      .categoria__listado--producto--precio {
+        font-size: 18px;
+        font-weight: 700;
+        color: #2e1d35;
+        margin-bottom: 10px; }
+      .categoria__listado--producto--raiting {
+        font-size: 18px;
+        color: #e0d1e6; }
+        .categoria__listado--producto--raiting .estrellita {
+          color: orange; }
+      .categoria__listado--producto--nuevo {
+        background-color: #1f3f7a; }
+      .categoria__listado--producto--usado {
+        background-color: #e0d1e6;
+        color: #845398; }
 
 .nosotros {
   width: 100%;
