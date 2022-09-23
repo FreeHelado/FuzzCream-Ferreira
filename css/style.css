@@ -46,7 +46,7 @@ header {
   position: sticky;
   top: 0;
   width: 100%;
-  z-index: 2; }
+  z-index: 3; }
 
 .cabezal {
   display: flex;
@@ -406,6 +406,13 @@ header {
             position: absolute;
             bottom: 0;
             z-index: 2; }
+            @media (max-width: 576px) {
+              .cont-fullcrema .full-crema__tarjetas--item2--img--boton {
+                background-color: #2e1d35;
+                color: #fff; } }
+            @media (max-width: 480px) {
+              .cont-fullcrema .full-crema__tarjetas--item2--img--boton {
+                bottom: 35px; } }
           .cont-fullcrema .full-crema__tarjetas--item2--img:hover img {
             filter: none;
             opacity: 1;
@@ -1087,3 +1094,5 @@ header {
     .publicar__form--b a:hover {
       color: #feaa7e;
       text-decoration: none; }
+
+/*# sourceMappingURL=style.css.map */

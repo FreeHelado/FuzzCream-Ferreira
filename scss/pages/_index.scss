@@ -310,6 +310,13 @@
                         bottom: 0;
                         z-index: 2;
                         
+                        @media (max-width:$sm) {
+                            background-color: $colorPrimario;
+                            color: #fff;
+                        }
+                        @media (max-width:$xs) {
+                            bottom: 35px;
+                        }
                     }  
                     &:hover {
                         img {
