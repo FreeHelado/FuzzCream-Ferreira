@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 * {
@@ -144,7 +145,7 @@ header {
 .buscador {
   width: 100%;
   height: 500px;
-  background-image: url("../assets/gretsch-streamliner-slide.jpg");
+  background-image: url("../assets/bg-fuzz-cream.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -156,7 +157,12 @@ header {
   justify-content: center; }
   .buscador__titulo {
     text-align: center;
-    font-size: 45px; }
+    font-size: 45px;
+    font-weight: 900; }
+    .buscador__titulo span {
+      background: -webkit-linear-gradient(45deg, #feaa7e 0%, #4774c7 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
     @media (max-width: 992px) {
       .buscador__titulo {
         font-size: 35px; } }
@@ -227,7 +233,9 @@ header {
       font-size: 18px; }
 
 .productos-home__titulo {
-  font-size: 35px;
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 20px;
   text-align: center; }
 
 .producto {
@@ -297,11 +305,113 @@ header {
       color: #fff;
       background-color: #2e1d35; }
 
+.cont-fullcrema {
+  display: flex;
+  height: 630px;
+  background-color: #2e1d35;
+  background-image: url(../../assets/bg-fullcrema.png); }
+  @media (max-width: 992px) {
+    .cont-fullcrema {
+      background-image: none;
+      height: 100%; } }
+  .cont-fullcrema .full-crema {
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto; }
+    @media (max-width: 768px) {
+      .cont-fullcrema .full-crema {
+        padding: 25px; } }
+    .cont-fullcrema .full-crema h1 {
+      font-size: 60px;
+      color: #fff;
+      font-weight: 900;
+      margin-bottom: 35px;
+      font-style: italic; }
+      .cont-fullcrema .full-crema h1 span {
+        background: -webkit-linear-gradient(45deg, #feaa7e 0%, #4774c7 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; }
+      @media (max-width: 768px) {
+        .cont-fullcrema .full-crema h1 {
+          font-size: 40px; } }
+    .cont-fullcrema .full-crema__tarjetas {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px; }
+      @media (max-width: 768px) {
+        .cont-fullcrema .full-crema__tarjetas {
+          grid-template-columns: repeat(1, 1fr); } }
+      .cont-fullcrema .full-crema__tarjetas--item {
+        width: 100%;
+        height: 400px;
+        background-image: linear-gradient(163deg, #feaa7e 0%, #4774c7 100%);
+        border-radius: 23px;
+        transition: all .3s; }
+        .cont-fullcrema .full-crema__tarjetas--item:hover {
+          box-shadow: 0px 0px 30px 1px rgba(255, 174, 0, 0.315); }
+      .cont-fullcrema .full-crema__tarjetas--item2 {
+        width: 100%;
+        height: 400px;
+        background-color: #201425;
+        border-radius: 10px;
+        transition: all .5s;
+        padding: 25px; }
+        .cont-fullcrema .full-crema__tarjetas--item2:hover {
+          transform: scale(0.98);
+          border-radius: 20px; }
+          .cont-fullcrema .full-crema__tarjetas--item2:hover h2::before {
+            content: '🍨'; }
+        .cont-fullcrema .full-crema__tarjetas--item2 h2 {
+          color: #fff;
+          font-size: 30px;
+          text-align: center;
+          font-weight: 800;
+          font-style: italic; }
+          .cont-fullcrema .full-crema__tarjetas--item2 h2::before {
+            content: ''; }
+        .cont-fullcrema .full-crema__tarjetas--item2--img {
+          width: 100%;
+          height: 85%;
+          overflow: hidden;
+          position: relative;
+          margin-top: 25px; }
+          .cont-fullcrema .full-crema__tarjetas--item2--img img {
+            width: 100%;
+            filter: grayscale(100%);
+            opacity: .8;
+            transition: all .5s; }
+          .cont-fullcrema .full-crema__tarjetas--item2--img--boton {
+            background-color: transparent;
+            width: 100%;
+            border-radius: 4px;
+            color: transparent;
+            cursor: pointer;
+            padding: 15px 30px;
+            font-size: 20px;
+            font-weight: 800;
+            font-style: italic;
+            text-transform: uppercase;
+            border: none;
+            position: absolute;
+            bottom: 0;
+            z-index: 2; }
+          .cont-fullcrema .full-crema__tarjetas--item2--img:hover img {
+            filter: none;
+            opacity: 1;
+            transform: scale(1.2); }
+          .cont-fullcrema .full-crema__tarjetas--item2--img:hover button {
+            background-image: linear-gradient(90deg, #53cbef 0%, #dcc66c 50%, #ffa3b6 75%, #53cbef 100%);
+            animation: boton-querica 5s linear infinite;
+            color: #2e1d35; }
+
+@keyframes boton-querica {
+  to {
+    background-position: 20vw; } }
+
 .productos-listado {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 15px;
-  padding: 25px;
   margin-bottom: 25px; }
   @media (max-width: 992px) {
     .productos-listado {

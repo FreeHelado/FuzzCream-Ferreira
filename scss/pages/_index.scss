@@ -1,6 +1,7 @@
 // --------------
 // Buscador BG //
 // Productos Destacados //
+// Zona Full Crema
 // Productos Secundarios //
 // --------------
 
@@ -8,7 +9,7 @@
 .buscador {
     width: 100%;
     height: 500px;
-    background-image: url("../assets/gretsch-streamliner-slide.jpg");
+    background-image: url("../assets/bg-fuzz-cream.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -22,6 +23,12 @@
     &__titulo {
         text-align: center;
         font-size: 45px;
+        font-weight: 900;
+        span {
+            background: -webkit-linear-gradient(45deg, $colorSecundario 0%, $colorTerciarioClaro 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            }
         @media (max-width: $lg) {
             font-size: 35px;   
         }
@@ -106,13 +113,11 @@
     }
 }
 
-// Nueva animacion de Producto
-
-
-
 // Productos Destacados /////////////////////////////////////////////
 .productos-home__titulo {
-    font-size: 35px;
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -197,11 +202,149 @@
     }
 }
 
+// Nueva zona Full Crema /////////////////////////////////////////////
+.cont-fullcrema {
+    display: flex;
+    height: 630px;
+    background-color: $colorPrimario;
+    background-image: url(../../assets/bg-fullcrema.png);
+    @media (max-width:$lg) {
+        background-image: none;
+        height: 100%;
+    }
+    .full-crema {
+        padding: 50px;
+        max-width: 1200px;
+        margin: 0 auto;
+        @media (max-width:$md) {
+            padding: 25px;
+        }
+        h1 {
+            font-size: 60px;
+            color: #fff;
+            font-weight: 900;
+            margin-bottom: 35px;
+            font-style: italic;
+            span {
+                background: -webkit-linear-gradient(45deg, $colorSecundario 0%, $colorTerciarioClaro 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            @media (max-width:$md) {
+                font-size: 40px; 
+            }
+        }
+
+        // Tarjetas //
+        &__tarjetas {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 20px;
+            @media (max-width:$md) {
+                grid-template-columns: repeat(1,1fr); 
+            }
+            &--item {
+                width: 100%;
+                height: 400px;
+                background-image: linear-gradient(163deg, $colorSecundario 0%, $colorTerciarioClaro 100%);
+                border-radius: 23px;
+                transition: all .3s;
+                &:hover {
+                    box-shadow: 0px 0px 30px 1px rgba(255, 174, 0, 0.315);
+                   }
+               }
+               
+            &--item2 {
+                width: 100%;
+                height: 400px;
+                background-color: $colorPrimarioDark;
+                border-radius: 10px;
+                transition: all .5s;
+                padding: 25px;
+                &:hover {
+                    transform: scale(0.98);
+                    border-radius: 20px;
+                    h2 {
+                        &::before {
+                            content: '🍨';
+                        }
+                    }
+                   }
+                h2 {
+                    color: #fff;
+                    font-size: 30px;
+                    text-align: center;
+                    font-weight: 800;
+                    font-style: italic;
+                    &::before {
+                        content: '';
+                    }
+                }
+
+                &--img {
+                    width: 100%;
+                    height: 85%;
+                    overflow: hidden;
+                    position: relative;
+                    margin-top: 25px;
+                    img {
+                        width: 100%;
+                        filter: grayscale(100%);
+                        opacity: .8;   
+                        transition: all .5s; 
+                    }
+                    &--boton {
+                        background-color: transparent;
+                        width: 100%;
+                        border-radius: 4px;
+                        color: transparent;
+                        cursor: pointer;
+                        padding: 15px 30px;
+                        font-size: 20px;
+                        font-weight: 800;
+                        font-style: italic;
+                        text-transform: uppercase;
+                        border: none;
+                        position: absolute;
+                        bottom: 0;
+                        z-index: 2;
+                        
+                    }  
+                    &:hover {
+                        img {
+                            filter: none;
+                            opacity: 1;
+                            transform: scale(1.2);
+                        }
+                        button {
+                            background-image: linear-gradient(90deg, #53cbef 0%, #dcc66c 50%, #ffa3b6 75%, #53cbef 100%);
+                            animation: boton-querica 5s linear infinite;
+                            color: $colorPrimario;
+                        }
+                        
+                    }
+                    @keyframes boton-querica {
+                        to {
+                         background-position: 20vw;
+                        }
+                    }
+                     
+                }
+                
+                
+                   
+            }
+        }   
+    }
+
+}
+
+
+
 // Productos Secundarios /////////////////////////////////////////////
 .productos-listado {
     @extend .container;
     @include templateGrilla(6, 15px);
-    padding: 25px;
     margin-bottom: 25px;
     @media (max-width: $lg) {
         grid-template-columns: repeat(4, 1fr);
