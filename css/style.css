@@ -26,7 +26,7 @@ h4 {
 p {
   font-size: 16px; }
 
-.container, .productos-listado, .producto-ampliado {
+.container, .pie, .productos-listado, .producto-ampliado {
   max-width: 1200px;
   margin: 0 auto; }
 
@@ -102,8 +102,9 @@ header {
           transform: translateX(50px); }
 
 .pie {
-  font-size: 16px;
-  height: 50px; }
+  font-size: 15px;
+  padding-block: 25px;
+  border-top: 1px solid #e9e9e9; }
   @media (max-width: 992px) {
     .pie {
       grid-template-columns: repeat(1, 1fr); } }
@@ -371,7 +372,8 @@ header {
           transform: scale(0.98);
           border-radius: 20px; }
           .cont-fullcrema .full-crema__tarjetas--item2:hover h2::before {
-            content: '🍨'; }
+            content: '🍨';
+            font-style: normal; }
         .cont-fullcrema .full-crema__tarjetas--item2 h2 {
           color: #fff;
           font-size: 30px;
@@ -1101,5 +1103,3 @@ header {
     .publicar__form--b a:hover {
       color: #feaa7e;
       text-decoration: none; }
-
-/*# sourceMappingURL=style.css.map */
