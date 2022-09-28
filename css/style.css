@@ -46,7 +46,7 @@ header {
   position: sticky;
   top: 0;
   width: 100%;
-  z-index: 3; }
+  z-index: 4; }
 
 .cabezal {
   display: flex;
