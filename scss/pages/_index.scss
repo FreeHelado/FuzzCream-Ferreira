@@ -205,7 +205,7 @@
 // Nueva zona Full Crema /////////////////////////////////////////////
 .cont-fullcrema {
     display: flex;
-    height: 630px;
+    height: 680px;
     background-color: $colorPrimario;
     background-image: url(../../assets/bg-fullcrema.png);
     @media (max-width:$lg) {
@@ -243,7 +243,8 @@
             gap: 20px;
             @media (max-width:$md) {
                 grid-template-columns: repeat(1,1fr); 
-            }
+            } 
+
             &--item {
                 width: 100%;
                 height: 400px;
@@ -287,63 +288,52 @@
                     width: 100%;
                     height: 85%;
                     overflow: hidden;
-                    position: relative;
                     margin-top: 25px;
                     img {
                         width: 100%;
                         filter: grayscale(100%);
                         opacity: .8;   
                         transition: all .5s; 
-                    }
-                    &--boton {
-                        background-color: transparent;
-                        width: 100%;
-                        border-radius: 4px;
-                        color: transparent;
-                        cursor: pointer;
-                        padding: 15px 30px;
-                        font-size: 20px;
-                        font-weight: 800;
-                        font-style: italic;
-                        text-transform: uppercase;
-                        border: none;
-                        position: absolute;
-                        bottom: 0;
-                        z-index: 2;
-                        
-                        @media (max-width:$sm) {
-                            background-color: $colorPrimario;
-                            color: #fff;
-                        }
-                        @media (max-width:$xs) {
-                            bottom: 35px;
-                        }
-                    }  
-                    &:hover {
-                        img {
+                        &:hover {
                             filter: none;
                             opacity: 1;
-                            transform: scale(1.2);
+                            transform: scale(1.2);  
                         }
-                        button {
-                            background-image: linear-gradient(90deg, #53cbef 0%, #dcc66c 50%, #ffa3b6 75%, #53cbef 100%);
-                            animation: boton-querica 5s linear infinite;
-                            color: $colorPrimario;
-                        }
-                        
+                    }       
+                }          
+            }
+        }
+        
+        
+            // boton general 
+            &__boton {
+                background-color: transparent;
+                width: 200px;
+                text-align: center;
+                border-radius: 5px;
+                color: #fff;
+                padding: 15px 30px;
+                font-size: 20px;
+                font-weight: 800;
+                font-style: italic;
+                text-transform: uppercase;
+                border: solid 2px #fff;
+                z-index: 2;
+                margin-block: 25px;
+                &:hover {
+                    background-image: linear-gradient(90deg, #53cbef 0%, #dcc66c 50%, #ffa3b6 75%, #53cbef 100%);
+                    animation: boton-querica 5s linear infinite;
+                    color: $colorPrimario;
+                    border: none;
+                       
+                }
+                @keyframes boton-querica {
+                    to {
+                     background-position: 20vw;
                     }
-                    @keyframes boton-querica {
-                        to {
-                         background-position: 20vw;
-                        }
-                    }
-                     
                 }
                 
-                
-                   
-            }
-        }   
+            } 
     }
 
 }

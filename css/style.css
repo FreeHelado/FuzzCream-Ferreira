@@ -323,7 +323,7 @@ header {
 
 .cont-fullcrema {
   display: flex;
-  height: 630px;
+  height: 680px;
   background-color: #2e1d35;
   background-image: url(../../assets/bg-fullcrema.png); }
   @media (max-width: 992px) {
@@ -391,43 +391,35 @@ header {
           width: 100%;
           height: 85%;
           overflow: hidden;
-          position: relative;
           margin-top: 25px; }
           .cont-fullcrema .full-crema__tarjetas--item2--img img {
             width: 100%;
             filter: grayscale(100%);
             opacity: .8;
             transition: all .5s; }
-          .cont-fullcrema .full-crema__tarjetas--item2--img--boton {
-            background-color: transparent;
-            width: 100%;
-            border-radius: 4px;
-            color: transparent;
-            cursor: pointer;
-            padding: 15px 30px;
-            font-size: 20px;
-            font-weight: 800;
-            font-style: italic;
-            text-transform: uppercase;
-            border: none;
-            position: absolute;
-            bottom: 0;
-            z-index: 2; }
-            @media (max-width: 576px) {
-              .cont-fullcrema .full-crema__tarjetas--item2--img--boton {
-                background-color: #2e1d35;
-                color: #fff; } }
-            @media (max-width: 480px) {
-              .cont-fullcrema .full-crema__tarjetas--item2--img--boton {
-                bottom: 35px; } }
-          .cont-fullcrema .full-crema__tarjetas--item2--img:hover img {
-            filter: none;
-            opacity: 1;
-            transform: scale(1.2); }
-          .cont-fullcrema .full-crema__tarjetas--item2--img:hover button {
-            background-image: linear-gradient(90deg, #53cbef 0%, #dcc66c 50%, #ffa3b6 75%, #53cbef 100%);
-            animation: boton-querica 5s linear infinite;
-            color: #2e1d35; }
+            .cont-fullcrema .full-crema__tarjetas--item2--img img:hover {
+              filter: none;
+              opacity: 1;
+              transform: scale(1.2); }
+    .cont-fullcrema .full-crema__boton {
+      background-color: transparent;
+      width: 200px;
+      text-align: center;
+      border-radius: 5px;
+      color: #fff;
+      padding: 15px 30px;
+      font-size: 20px;
+      font-weight: 800;
+      font-style: italic;
+      text-transform: uppercase;
+      border: solid 2px #fff;
+      z-index: 2;
+      margin-block: 25px; }
+      .cont-fullcrema .full-crema__boton:hover {
+        background-image: linear-gradient(90deg, #53cbef 0%, #dcc66c 50%, #ffa3b6 75%, #53cbef 100%);
+        animation: boton-querica 5s linear infinite;
+        color: #2e1d35;
+        border: none; }
 
 @keyframes boton-querica {
   to {
