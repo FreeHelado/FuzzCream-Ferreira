@@ -401,25 +401,27 @@ header {
               filter: none;
               opacity: 1;
               transform: scale(1.2); }
-    .cont-fullcrema .full-crema__boton {
-      background-color: transparent;
-      width: 200px;
-      text-align: center;
-      border-radius: 5px;
-      color: #fff;
-      padding: 15px 30px;
-      font-size: 20px;
-      font-weight: 800;
-      font-style: italic;
-      text-transform: uppercase;
-      border: solid 2px #fff;
-      z-index: 2;
-      margin-block: 25px; }
-      .cont-fullcrema .full-crema__boton:hover {
-        background-image: linear-gradient(90deg, #53cbef 0%, #dcc66c 50%, #ffa3b6 75%, #53cbef 100%);
-        animation: boton-querica 5s linear infinite;
-        color: #2e1d35;
-        border: none; }
+    .cont-fullcrema .full-crema__link {
+      text-align: center; }
+      .cont-fullcrema .full-crema__link--boton {
+        background-color: transparent;
+        width: 300px;
+        text-align: center;
+        border-radius: 5px;
+        color: #fff;
+        padding: 12px 30px;
+        font-size: 18px;
+        font-weight: 800;
+        font-style: italic;
+        text-transform: uppercase;
+        border: solid 2px #fff;
+        z-index: 2;
+        margin-block: 25px; }
+        .cont-fullcrema .full-crema__link--boton:hover {
+          background-image: linear-gradient(90deg, #53cbef 0%, #dcc66c 50%, #ffa3b6 75%, #53cbef 100%);
+          animation: boton-querica 5s linear infinite;
+          color: #2e1d35;
+          border: none; }
 
 @keyframes boton-querica {
   to {
@@ -1173,5 +1175,3 @@ header {
     .publicar__form--b a:hover {
       color: #feaa7e;
       text-decoration: none; }
-
-/*# sourceMappingURL=style.css.map */
