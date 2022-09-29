@@ -32,7 +32,7 @@ p {
     font-size: 16px;
 }
 
-// Extends
+//// Extends
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -48,6 +48,16 @@ p {
     margin-block: 10px; 
     width: fit-content;
 }
+
+// Degradado en Titulos
+.titulo-gradient {
+    span {
+        background: -webkit-linear-gradient(45deg, $colorSecundario 0%, $colorTerciarioClaro 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
 
 // Mixins
 @mixin templateGrilla($columns, $gap) {
