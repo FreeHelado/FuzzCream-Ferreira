@@ -12,5 +12,8 @@
 4. **Formulario de venta.** vender.html. Maqueta del formulario de venta, se utilizó esta página para poner en práctica las animaciones y form de bootstrap
 5. **Nosotros.** nosotros.html. Página complementaria para presentar un formulario de contacto, mapa y contenido estándar. 
 
+---
+
+- Un comentario importante sobre el script de sass. Agregué una línea para poder generar el sourcemap, esto no lo vimos en clases pero lo encontré en la web, me fue super util generar el mapa porque de esa manera cuando inspeccionás elemento en el navegador podes ver en que componente scss están las cosas y facilita para localizar y modificar. 
 
 
