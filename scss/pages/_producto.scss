@@ -559,32 +559,51 @@
     z-index: 5;
     display: none;
     @media (max-width:$sm) {
-        display: block;
+        display: inline-block;
+    }
+    @media (max-width:$xxs) {
+        height: 75px;
     }
 
     &__container {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: flex-start;
         padding-inline: 15px;
-        
+        position: relative;
         &--img {
-            height: 80px;
-            width: 80px;
-            border-radius: 50px;
-            overflow: hidden;
-            img {
-                height: 100%;
+            width: 100px;
+            &--marco {
+                height: 80px;
+                width: 80px;
+                border-radius: 50%;
+                overflow: hidden;
+                position: absolute;
+                bottom: 5px;
+                left: 10px;
+                border: solid 3px $colorGrisClaro;
+                img {
+                    height: 100%;
+                    width: auto;
+                }
+                @media (max-width:$xxs) {
+                    bottom: 20px;
+                }
             }
         }
+        
 
         &--data {
+            padding: 10px;
             h3 {
-                font-size: 15px;
+                font-size: 18px;
                 margin-bottom: 0px;
+                @media (max-width:$xxs) {
+                    font-size: 16px;
+                }
             }
             h4 {
-                font-size: 14px;
+                font-size: 16px;
                 font-weight: 700;
             }
         }
