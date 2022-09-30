@@ -2,6 +2,7 @@
 // Info del Producto //
 // Iframe + Info //
 // Atributos - Detalles Técnicos //
+// Comentarios //
 // Historia //
 // TimeLine //
 // Más Historia //
@@ -76,9 +77,14 @@
     }
     &__img-vendedor {
         width: 40px;
+        height: 40px;
         border-radius: 50%;
         border: solid 3px $colorGrisClaro;
         margin-right: 10px;
+        img {
+            height: 100%;
+            width: auto;
+        }
     }
     &__nombre-vendedor {
         font-size: 14px;
@@ -222,6 +228,163 @@
     &__valor {
         text-align: left;
         font-weight: 300;
+    }
+}
+
+
+// Comentarios ////////////////////////////////////////
+.comentarios {
+    @extend .container-chico;
+    margin-bottom: 80px;
+    @media (max-width:$lg) {
+        padding-inline: 30px;
+    }
+    h4 {
+        padding: 10px 0;
+        font-weight: 700;
+        font-size: 30px;
+        text-align: center;
+        @extend .titulo-gradient;
+    }
+    &__caja {
+        
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        // comentario usuario
+        &--tarjeta {
+            border: solid 1px $colorPrimarioLight;
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: $sombraSobreClaroLight;
+            &--comentario {
+                padding: 15px;
+                position: relative;
+                display: flex;
+                align-items: center;
+                &::after {
+                    content: '';
+                    height: 20px;
+                    width: 20px;
+                    transform: rotate(45deg);
+                    border: solid;
+                    border-width: 1px;
+                    border-color:  transparent transparent $colorPrimarioLight $colorPrimarioLight;
+                    background-color: #fff;
+                    border-radius: 2px;
+                    position: absolute;
+                    bottom: 30px;
+                    left: -10px;
+                }
+                &--texto {
+                    h2 {
+                        font-size: 18px;
+                        color: $colorPrimario;
+                        font-weight: 700;
+                        margin-bottom: 5px;
+                        span {
+                            font-size: 13px;
+                            font-weight: 500;
+                            color: $colorTerciarioClaro;
+                            display: inline;
+                            margin-left: 10px;
+                        }
+                    }
+                    p {
+                        font-size: 14px;
+                    }
+                }
+                
+                &--img-perfil {
+                    width: 65px;
+                    height: 65px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    margin-right: 10px;
+                    position: relative;
+                    flex: none;
+                    img {
+                        height: 100%;
+                        width: auto;
+                    }
+                    @media (max-width:$xs) {
+                        height: 50px;
+                        width: 50px;
+                        align-self: normal;
+                    }
+                }    
+            }
+            
+        }
+
+        // comentario vendedor
+        &--tarjeta-vendedor {
+            width: 80%;
+            border-radius: 20px;
+            background-color: $colorPrimarioLight;
+            margin-left: 25px;
+            margin-bottom: 25px;
+            @media (max-width:$xs) {
+                width: 90%;
+            }
+            &--comentario {
+                padding: 15px;
+                position: relative;
+                display: flex;
+                align-items: center;
+                &::after {
+                    content: '';
+                    height: 20px;
+                    width: 20px;
+                    transform: rotate(45deg);
+                    background-color: $colorPrimarioLight;
+                    position: absolute;
+                    top: -9px;
+                    left: 30px;
+                }
+                &--texto {
+                    width: 100%;
+                    h2 {
+                        font-size: 18px;
+                        color: $colorPrimario;
+                        font-weight: 700;
+                        margin-bottom: 5px;
+                        span {
+                            font-size: 13px;
+                            font-weight: 500;
+                            color: $colorTerciarioClaro;
+                            display: inline;
+                            margin-left: 10px;
+                        }
+                    }
+                    p {
+                        font-size: 14px;
+                    }
+                    
+                }
+                
+                &--img-perfil {
+                    width: 65px;
+                    height: 65px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    align-self: normal;
+                    margin-right: 10px;
+                    position: relative;
+                    flex: none;
+                    img {
+                        height: 100%;
+                        width: auto;
+                    }
+                    @media (max-width:$xs) {
+                        height: 50px;
+                        width: 50px;
+                        align-self: normal;
+                    }
+                }    
+            }
+            
+        }
     }
 }
 
