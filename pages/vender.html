@@ -65,9 +65,72 @@
     
     <!-- Form con Bootstrap  -->
     <main class="publicar__bg">
-        <section class="container">
+      
+      
+        <section class="comovender">
+          <div class="comovender__contenedor">
+              <h2><span>Publicá </span>en FuzzCream</h2>
+              <div class="comovender__contenedor--pasos">
+                  <div class="comovender__contenedor--pasos--tarjeta">
+                      <span>1</span>
+                      <h3>Publicá</h3>
+                      
+                      <p>Los datos facilitados en tus ventas anteriores harán que te resulte más sencillo anunciar tu producto al precio adecuado.</p>
+                  </div>
+                  <div class="comovender__contenedor--pasos--tarjeta">
+                      <span>2</span>
+                      <h3>Vende</h3>
+                      
+                      <p>Miles de compradores de primera procedentes de todo el país buscan instrumentos en FuzzCream</p>
+                  </div>
+                  <div class="comovender__contenedor--pasos--tarjeta">
+                      <span>3</span>
+                      <h3>Enviá</h3>
+                      <p>Te facilitamos el envío de tu equipo, tanto con las cajas y las etiquetas de descuento como con las guías de embalaje.</p>
+                  </div>
+              </div>
+
+          </div>
+      
+      </section>
+      
+      <section class="container">
             <div class="row justify-content-center py-5">
-                <div class="col-12 col-lg-6">
+              
+              <!-- Animación -->
+              <div class="col-12 col-lg-6">
+                <div class="animacion-instrumentos">
+                  
+                  <div class="animacion-instrumentos__bar">
+                    <div class="animacion-instrumentos__bar--icono">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      
+                    </div>
+                  </div>
+                  
+                  <div class="animacion-instrumentos__amp">
+                    <img src="../assets/amp.svg" alt="">
+                  </div>
+                  
+                  <div class="animacion-instrumentos__teclado">
+                    <img src="../assets/teclado.svg" alt="">
+                  </div>
+
+                  <div class="animacion-instrumentos__bajo">
+                    <img src="../assets/bajo.svg" alt="">
+                  </div>
+                  
+                  <div class="animacion-instrumentos__sombra"></div>
+                </div>
+                
+              </div>  
+              
+              <!-- Formulario -->
+              <div class="col-12 col-lg-6">
                   <h1>Publicá tu instrumento</h1>
                     <form class="publicar__form--b">
                       
@@ -101,13 +164,17 @@
                         </div>
                           
                         <div class="mb-3">
+                          <div>
                             <label for="inputState" class="form-label me-3">Precio</label>
-                            
+                          </div>  
+                          
+                          <div>
                             <input type="radio" class="btn-check" name="options-outlined" id="primary-outlined" autocomplete="off" checked>
                             <label class="btn btn-outline-primary me-2" for="primary-outlined">$ Pesos</label>
 
                             <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined" autocomplete="off">
                             <label class="btn btn-outline-danger" for="danger-outlined">USD Dolares</label>
+                          </div>
                         </div>
                         <div class="mb-3">
                             <input type="text" class="form-control" id="titulo" placeholder="$ Ingrese el precio">
@@ -130,7 +197,9 @@
                         
                         <button type="submit">ENVIAR</button>
                       </form>
-                </div>
+              </div>
+
+
             </div>
         </section>
     </main>

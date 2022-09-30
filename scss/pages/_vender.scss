@@ -61,3 +61,200 @@
         } 
     } 
 }
+
+// ANIMACIÓN //
+.animacion-instrumentos {
+    position: relative;
+    height: 700px;
+    @media (max-width:$md) {
+        display: none;
+    }
+    &__teclado {
+        position: absolute;
+        top: 50px;
+        left: 5px;
+        z-index: 2;
+        transform: rotate(20deg);
+        animation-name: tecladoMove;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        img {
+            width: 100%;
+        }
+        &:hover {
+            &::after {
+                content: '⚡';
+                font-size: 50px;
+                position: absolute;
+                top: 5px;
+                z-index: 6;
+                animation: shake 0.5s;
+                animation-iteration-count: infinite;
+            }
+        }
+    }
+    
+    &__bajo {
+        position: absolute;
+        bottom: 20px;
+        right: 15px;
+        z-index: 3;
+        animation-name: bajoMove;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        img {
+            width: 100%;
+        }
+        &:hover {
+            animation: shake 0.5s;
+            animation-iteration-count: infinite;
+            &::after {
+                content: '⚡';
+                font-size: 50px;
+                position: absolute;
+                top: 5px;
+                z-index: 6;
+            }
+            &::before {
+                content: '⚡';
+                font-size: 45px;
+                position: absolute;
+                top: 5px;
+                right: 120px;
+                z-index: 6;
+                transform: rotate(90deg);
+            }
+        }
+    }
+    &__sombra {
+        height: 120px;
+        width: 180px;
+        background-color: $colorPrimarioDark;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 20px;
+        right: 120px;
+        z-index: 1;
+        animation-name: sombraMove;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+
+    &__amp {
+        position: absolute;
+        bottom: 10px;
+        right: 20%;
+        z-index: 0;
+        width: auto;
+        img {
+            width: 400px;
+        }
+    }
+
+    &__bar {
+        &--icono {
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            height: 300px;
+            bottom: 120px;
+            // opacity: .2;
+            span {
+                width: 80px;
+                height: 100%;
+                background-color: $colorSecundario;
+                transform-origin: bottom;
+                animation: barras 2.2s ease infinite alternate;
+                border-radius: 5px;
+                content: '';
+                &:nth-of-type(2) {
+                    animation-delay: -3.2s;
+                }
+                &:nth-of-type(4) {
+                    animation-delay: -4.7s;
+                }
+            }
+        }
+        @keyframes barras {
+            10% {
+              transform: scaleY(0.3); 
+            }
+          
+            30% {
+              transform: scaleY(1); 
+            }
+          
+            60% {
+              transform: scaleY(0.5); 
+            }
+          
+            80% {
+              transform: scaleY(0.75); 
+            }
+          
+            100% {
+              transform: scaleY(0.6); 
+            }
+          }
+    }
+}
+
+
+    // animaciones 
+    // animacion-teclado
+    @keyframes tecladoMove {
+        0% {
+            top: 20px;
+        }
+        50% {
+            top: 50px;
+        }
+        100% {
+            top: 20px;
+        }
+    }
+
+
+    // animacion-bajo
+    @keyframes bajoMove {
+        0% {
+            bottom: 20px;
+        }
+        50% {
+            bottom: 40px;
+        }
+        100% {
+            bottom: 20px;
+        }
+    }
+
+    // animacion-sombra
+    @keyframes sombraMove {
+        0% {
+            height: 18px;
+            width: 180px;
+        }
+        50% {
+            height: 10px;
+            width: 150px;
+        }
+        100% {
+            height: 18px;
+            width: 180px;
+        }
+    }
+
+    @keyframes shake {
+        0% { transform: translate(1px, 1px) rotate(0deg); }
+        10% { transform: translate(-1px, -2px) rotate(-1deg); }
+        20% { transform: translate(-3px, 0px) rotate(1deg); }
+        30% { transform: translate(3px, 2px) rotate(0deg); }
+        40% { transform: translate(1px, -1px) rotate(1deg); }
+        50% { transform: translate(-1px, 2px) rotate(-1deg); }
+        60% { transform: translate(-3px, 1px) rotate(0deg); }
+        70% { transform: translate(3px, 1px) rotate(-1deg); }
+        80% { transform: translate(-1px, -1px) rotate(1deg); }
+        90% { transform: translate(1px, 2px) rotate(0deg); }
+        100% { transform: translate(1px, -2px) rotate(-1deg); }
+      }

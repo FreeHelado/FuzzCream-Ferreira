@@ -26,7 +26,7 @@ h4 {
 p {
   font-size: 16px; }
 
-.container, .pie, .productos-listado, .comovender__contenedor, .producto-ampliado {
+.container, .pie, .comovender__contenedor, .productos-listado, .producto-ampliado {
   max-width: 1200px;
   margin: 0 auto; }
 
@@ -161,6 +161,81 @@ header {
   .pie--titulo {
     font-size: 16px;
     font-weight: 900; }
+
+.comovender {
+  color: #fff;
+  background-color: #201425; }
+  .comovender__contenedor {
+    padding-block: 50px; }
+    .comovender__contenedor h2 {
+      font-size: 40px;
+      font-weight: 800;
+      text-align: center; }
+    .comovender__contenedor--pasos {
+      display: flex;
+      gap: 30px;
+      margin-top: 40px; }
+      @media (max-width: 1200px) {
+        .comovender__contenedor--pasos {
+          padding-inline: 20px; } }
+      @media (max-width: 992px) {
+        .comovender__contenedor--pasos {
+          flex-direction: column; } }
+      .comovender__contenedor--pasos--tarjeta {
+        background-image: linear-gradient(45deg, #53cbef 0%, #4774c7 100%);
+        border-radius: 10px;
+        padding: 25px;
+        position: relative;
+        box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.2);
+        transition: all .3s; }
+        .comovender__contenedor--pasos--tarjeta h3 {
+          color: #06303d;
+          font-size: 22px;
+          font-weight: 600;
+          transition: all .3s; }
+        .comovender__contenedor--pasos--tarjeta span {
+          position: absolute;
+          top: -15px;
+          left: -20px;
+          background-image: linear-gradient(45deg, #feaa7e 0%, #4774c7 100%);
+          border-radius: 50%;
+          padding: 3px;
+          width: 45px;
+          height: 45px;
+          font-size: 26px;
+          font-weight: 600;
+          text-align: center;
+          box-shadow: 0 10px 40px -12px rgba(0, 0, 0, 0.4); }
+        .comovender__contenedor--pasos--tarjeta p {
+          color: #06303d;
+          transition: all .3s; }
+        .comovender__contenedor--pasos--tarjeta:hover {
+          transform: scale(1.08);
+          z-index: 2;
+          background-image: linear-gradient(45deg, #feaa7e 0%, #4774c7 100%); }
+          .comovender__contenedor--pasos--tarjeta:hover h3 {
+            color: #fff; }
+          .comovender__contenedor--pasos--tarjeta:hover p {
+            color: #fff; }
+    .comovender__contenedor--cont {
+      text-align: center; }
+      .comovender__contenedor--cont--link {
+        font-size: 20px;
+        font-weight: 800;
+        color: #53cbef;
+        margin-top: 30px;
+        cursor: pointer;
+        display: inline-block; }
+        .comovender__contenedor--cont--link--boton {
+          background: linear-gradient(currentColor 0 0) 0 100%/var(--d, 0) 3px no-repeat;
+          transition: all 0.5s; }
+          .comovender__contenedor--cont--link--boton::after {
+            content: '\279D'; }
+          .comovender__contenedor--cont--link--boton:hover {
+            --d: 100%;
+            transform: scale(1.1); }
+          .comovender__contenedor--cont--link--boton a {
+            text-decoration: none; }
 
 .buscador {
   width: 100%;
@@ -516,81 +591,6 @@ header {
     .producto-secundario__boton:hover {
       color: #fff;
       background-color: #2e1d35; }
-
-.comovender {
-  color: #fff;
-  background-color: #201425; }
-  .comovender__contenedor {
-    padding-block: 50px; }
-    .comovender__contenedor h2 {
-      font-size: 40px;
-      font-weight: 800;
-      text-align: center; }
-    .comovender__contenedor--pasos {
-      display: flex;
-      gap: 30px;
-      margin-top: 40px; }
-      @media (max-width: 1200px) {
-        .comovender__contenedor--pasos {
-          padding-inline: 20px; } }
-      @media (max-width: 992px) {
-        .comovender__contenedor--pasos {
-          flex-direction: column; } }
-      .comovender__contenedor--pasos--tarjeta {
-        background-image: linear-gradient(45deg, #53cbef 0%, #4774c7 100%);
-        border-radius: 10px;
-        padding: 25px;
-        position: relative;
-        box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.2);
-        transition: all .3s; }
-        .comovender__contenedor--pasos--tarjeta h3 {
-          color: #06303d;
-          font-size: 22px;
-          font-weight: 600;
-          transition: all .3s; }
-        .comovender__contenedor--pasos--tarjeta span {
-          position: absolute;
-          top: -15px;
-          left: -20px;
-          background-image: linear-gradient(45deg, #feaa7e 0%, #4774c7 100%);
-          border-radius: 50%;
-          padding: 3px;
-          width: 45px;
-          height: 45px;
-          font-size: 26px;
-          font-weight: 600;
-          text-align: center;
-          box-shadow: 0 10px 40px -12px rgba(0, 0, 0, 0.4); }
-        .comovender__contenedor--pasos--tarjeta p {
-          color: #06303d;
-          transition: all .3s; }
-        .comovender__contenedor--pasos--tarjeta:hover {
-          transform: scale(1.08);
-          z-index: 2;
-          background-image: linear-gradient(45deg, #feaa7e 0%, #4774c7 100%); }
-          .comovender__contenedor--pasos--tarjeta:hover h3 {
-            color: #fff; }
-          .comovender__contenedor--pasos--tarjeta:hover p {
-            color: #fff; }
-    .comovender__contenedor--cont {
-      text-align: center; }
-      .comovender__contenedor--cont--link {
-        font-size: 20px;
-        font-weight: 800;
-        color: #53cbef;
-        margin-top: 30px;
-        cursor: pointer;
-        display: inline-block; }
-        .comovender__contenedor--cont--link--boton {
-          background: linear-gradient(currentColor 0 0) 0 100%/var(--d, 0) 3px no-repeat;
-          transition: all 0.5s; }
-          .comovender__contenedor--cont--link--boton::after {
-            content: '\279D'; }
-          .comovender__contenedor--cont--link--boton:hover {
-            --d: 100%;
-            transform: scale(1.1); }
-          .comovender__contenedor--cont--link--boton a {
-            text-decoration: none; }
 
 .producto-ampliado {
   display: grid;
@@ -1365,4 +1365,157 @@ header {
       color: #feaa7e;
       text-decoration: none; }
 
-/*# sourceMappingURL=style.css.map */
+.animacion-instrumentos {
+  position: relative;
+  height: 700px; }
+  @media (max-width: 768px) {
+    .animacion-instrumentos {
+      display: none; } }
+  .animacion-instrumentos__teclado {
+    position: absolute;
+    top: 50px;
+    left: 5px;
+    z-index: 2;
+    transform: rotate(20deg);
+    animation-name: tecladoMove;
+    animation-duration: 5s;
+    animation-iteration-count: infinite; }
+    .animacion-instrumentos__teclado img {
+      width: 100%; }
+    .animacion-instrumentos__teclado:hover::after {
+      content: '⚡';
+      font-size: 50px;
+      position: absolute;
+      top: 5px;
+      z-index: 6;
+      animation: shake 0.5s;
+      animation-iteration-count: infinite; }
+  .animacion-instrumentos__bajo {
+    position: absolute;
+    bottom: 20px;
+    right: 15px;
+    z-index: 3;
+    animation-name: bajoMove;
+    animation-duration: 4s;
+    animation-iteration-count: infinite; }
+    .animacion-instrumentos__bajo img {
+      width: 100%; }
+    .animacion-instrumentos__bajo:hover {
+      animation: shake 0.5s;
+      animation-iteration-count: infinite; }
+      .animacion-instrumentos__bajo:hover::after {
+        content: '⚡';
+        font-size: 50px;
+        position: absolute;
+        top: 5px;
+        z-index: 6; }
+      .animacion-instrumentos__bajo:hover::before {
+        content: '⚡';
+        font-size: 45px;
+        position: absolute;
+        top: 5px;
+        right: 120px;
+        z-index: 6;
+        transform: rotate(90deg); }
+  .animacion-instrumentos__sombra {
+    height: 120px;
+    width: 180px;
+    background-color: #201425;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 20px;
+    right: 120px;
+    z-index: 1;
+    animation-name: sombraMove;
+    animation-duration: 4s;
+    animation-iteration-count: infinite; }
+  .animacion-instrumentos__amp {
+    position: absolute;
+    bottom: 10px;
+    right: 20%;
+    z-index: 0;
+    width: auto; }
+    .animacion-instrumentos__amp img {
+      width: 400px; }
+  .animacion-instrumentos__bar--icono {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 300px;
+    bottom: 120px; }
+    .animacion-instrumentos__bar--icono span {
+      width: 80px;
+      height: 100%;
+      background-color: #feaa7e;
+      transform-origin: bottom;
+      animation: barras 2.2s ease infinite alternate;
+      border-radius: 5px;
+      content: ''; }
+      .animacion-instrumentos__bar--icono span:nth-of-type(2) {
+        animation-delay: -3.2s; }
+      .animacion-instrumentos__bar--icono span:nth-of-type(4) {
+        animation-delay: -4.7s; }
+
+@keyframes barras {
+  10% {
+    transform: scaleY(0.3); }
+  30% {
+    transform: scaleY(1); }
+  60% {
+    transform: scaleY(0.5); }
+  80% {
+    transform: scaleY(0.75); }
+  100% {
+    transform: scaleY(0.6); } }
+
+@keyframes tecladoMove {
+  0% {
+    top: 20px; }
+  50% {
+    top: 50px; }
+  100% {
+    top: 20px; } }
+
+@keyframes bajoMove {
+  0% {
+    bottom: 20px; }
+  50% {
+    bottom: 40px; }
+  100% {
+    bottom: 20px; } }
+
+@keyframes sombraMove {
+  0% {
+    height: 18px;
+    width: 180px; }
+  50% {
+    height: 10px;
+    width: 150px; }
+  100% {
+    height: 18px;
+    width: 180px; } }
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg); }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg); }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg); }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg); }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg); }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg); }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg); }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg); }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg); }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg); }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg); } }
