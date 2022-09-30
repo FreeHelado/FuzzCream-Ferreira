@@ -40,7 +40,7 @@ p {
   margin-block: 10px;
   width: fit-content; }
 
-.titulo-gradient span, .comovender__contenedor h2 span {
+.titulo-gradient span, .comovender__contenedor h2 span, .comovender__contenedor--cont--link span {
   background: -webkit-linear-gradient(45deg, #feaa7e 0%, #4774c7 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
@@ -246,7 +246,10 @@ header {
       border: none;
       color: #fff;
       font-weight: 700;
-      font-size: 18px; }
+      font-size: 18px;
+      transition: all .3s; }
+      .buscador__form button:hover {
+        background-color: #2e1d35; }
 
 .productos-home__titulo {
   font-size: 30px;
@@ -392,6 +395,9 @@ header {
           height: 85%;
           overflow: hidden;
           margin-top: 25px; }
+          @media (max-width: 480px) {
+            .cont-fullcrema .full-crema__tarjetas--item2--img {
+              height: 100%; } }
           .cont-fullcrema .full-crema__tarjetas--item2--img img {
             width: 100%;
             filter: grayscale(100%);
@@ -416,7 +422,8 @@ header {
         text-transform: uppercase;
         border: solid 2px #fff;
         z-index: 2;
-        margin-block: 25px; }
+        margin-block: 25px;
+        transition: all .3s; }
         .cont-fullcrema .full-crema__link--boton:hover {
           background-image: linear-gradient(90deg, #53cbef 0%, #dcc66c 50%, #ffa3b6 75%, #53cbef 100%);
           animation: boton-querica 5s linear infinite;
@@ -517,8 +524,8 @@ header {
       text-align: center; }
     .comovender__contenedor--pasos {
       display: flex;
-      gap: 25px;
-      margin-top: 25px; }
+      gap: 30px;
+      margin-top: 40px; }
       @media (max-width: 1200px) {
         .comovender__contenedor--pasos {
           padding-inline: 20px; } }
@@ -526,27 +533,60 @@ header {
         .comovender__contenedor--pasos {
           flex-direction: column; } }
       .comovender__contenedor--pasos--tarjeta {
-        background-color: #dcc66c;
-        border-radius: 3px;
+        background-image: linear-gradient(45deg, #53cbef 0%, #4774c7 100%);
+        border-radius: 10px;
         padding: 25px;
-        position: relative; }
+        position: relative;
+        box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.2);
+        transition: all .3s; }
         .comovender__contenedor--pasos--tarjeta h3 {
-          color: #2e1d35;
-          font-size: 24px;
-          font-weight: 600; }
+          color: #06303d;
+          font-size: 22px;
+          font-weight: 600;
+          transition: all .3s; }
         .comovender__contenedor--pasos--tarjeta span {
           position: absolute;
-          top: -8px;
-          left: -8px;
-          background-color: #4774c7;
+          top: -15px;
+          left: -20px;
+          background-image: linear-gradient(45deg, #feaa7e 0%, #4774c7 100%);
           border-radius: 50%;
-          padding: 3px 10px;
-          width: 30px;
-          height: 30px;
-          font-size: 24px;
-          font-weight: 700; }
+          padding: 3px;
+          width: 45px;
+          height: 45px;
+          font-size: 26px;
+          font-weight: 600;
+          text-align: center;
+          box-shadow: 0 10px 40px -12px rgba(0, 0, 0, 0.4); }
         .comovender__contenedor--pasos--tarjeta p {
-          color: #2e1d35; }
+          color: #06303d;
+          transition: all .3s; }
+        .comovender__contenedor--pasos--tarjeta:hover {
+          transform: scale(1.08);
+          z-index: 2;
+          background-image: linear-gradient(45deg, #feaa7e 0%, #4774c7 100%); }
+          .comovender__contenedor--pasos--tarjeta:hover h3 {
+            color: #fff; }
+          .comovender__contenedor--pasos--tarjeta:hover p {
+            color: #fff; }
+    .comovender__contenedor--cont {
+      text-align: center; }
+      .comovender__contenedor--cont--link {
+        font-size: 20px;
+        font-weight: 800;
+        color: #53cbef;
+        margin-top: 30px;
+        cursor: pointer;
+        display: inline-block; }
+        .comovender__contenedor--cont--link--boton {
+          background: linear-gradient(currentColor 0 0) 0 100%/var(--d, 0) 3px no-repeat;
+          transition: all 0.5s; }
+          .comovender__contenedor--cont--link--boton::after {
+            content: '\279D'; }
+          .comovender__contenedor--cont--link--boton:hover {
+            --d: 100%;
+            transform: scale(1.1); }
+          .comovender__contenedor--cont--link--boton a {
+            text-decoration: none; }
 
 .producto-ampliado {
   display: grid;
