@@ -1,3 +1,20 @@
+//////////////////////////
+//        ()            //
+//       (__)           //
+//      (____)          //
+//     (______)         //
+//    (________)        //
+//   (__________)       //
+//    \/\/\/\/\/        //
+//     \/\/\/\/         //
+//      \/\/\/          //
+//       \/\/           //
+//        \/            //
+// Nosotros - Texto + BG ///
+// formulario de contacto ///
+// Mapa ///
+
+// Nosotros - Texto + BG ////////////////////////////////////////////
 .nosotros {
     width: 100%;
     height: 500px;
@@ -14,6 +31,7 @@
     @media (max-width: $md) {
         padding: 20px;
     }
+
     &__cont {
         max-width: 1200px;
         margin: 0 auto;
@@ -21,6 +39,7 @@
             overflow: scroll;
         }
     }
+
     &__titulo {
         text-align: center;
         font-size: 45px;
@@ -29,6 +48,7 @@
             font-size: 30px;
         }
     }
+
     &__contacto {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -38,12 +58,13 @@
             grid-template-columns: repeat(1, 1fr);
         }
     }
+
     &__mapa {
         width: 100%;
         padding: 15px;
     }
 
-    // formulario de contacto//
+    // formulario de contacto//////////////////////////////////////
     &__form {
         display: flex;
         flex-direction: column;
@@ -59,6 +80,7 @@
             margin-top: 5px;
             margin-bottom: 10px;
         }
+
         select {
             height: 50px;
             border-radius: 5px;
@@ -68,11 +90,13 @@
             margin-top: 5px;
             margin-bottom: 10px;
         }
+
         label {
             font-size: 18px;
             font-weight: 600;
             width: 100%;
         }
+
         textarea {
             border: solid 1px $colorGrisClaro;
             padding: 10px;
@@ -80,6 +104,7 @@
             font-size: 14px;
             margin: 10px 0;
         }
+
         button {
             width: 100%;
             height: 50px;
@@ -91,6 +116,7 @@
             font-size: 18px;
         }
     }
+    
     &__intro {
         display: flex;
         flex-direction: column;

@@ -1,12 +1,28 @@
-// ------------------------------------
-// Info del Producto //
-// Iframe + Info //
+//////////////////////////
+//        ()            //
+//       (__)           //
+//      (____)          //
+//     (______)         //
+//    (________)        //
+//   (__________)       //
+//    \/\/\/\/\/        //
+//     \/\/\/\/         //
+//      \/\/\/          //
+//       \/\/           //
+//        \/            //
+// Producto ampliado //
+    //  Info del Producto //
+    //  Iframe YT + Info //
 // Atributos - Detalles Técnicos //
 // Comentarios //
+    // comentario usuario
+    // comentario vendedor
 // Historia //
+    // Info de historia
+    // animación del bg
 // TimeLine //
-// Más Historia //
-// ------------------------------------
+// Footer Fijo - Celular//
+///////////////////////////
 
 // Info del Producto ///////////////////////////////////////////
 .producto-ampliado {
@@ -19,6 +35,7 @@
         grid-template-columns: repeat(1, 1fr);
         margin-top: 0;
     }
+
     &__imagen {
         width: 100%;
         &--img {
@@ -28,6 +45,7 @@
             }
         }
     }
+
     &__info {
         padding: 30px;
         border: solid 1px $colorGrisClaro;
@@ -47,12 +65,14 @@
             padding: 15px;
         }   
     }
+
     &__titulo {
         font-size: 26px;
         font-weight: 600;
         color: $colorPrimario;
         margin: 15px 0 15px 0;
     }
+
     &__categoria {
         font-size: 13px;
         font-weight: 600;
@@ -66,6 +86,7 @@
             }
         }
     }
+
     &__nuevo {
         @extend .tags;
         margin-bottom: 15px;
@@ -75,6 +96,7 @@
         display: flex;
         align-items: center;
     }
+
     &__img-vendedor {
         width: 40px;
         height: 40px;
@@ -86,21 +108,25 @@
             width: auto;
         }
     }
+
     &__nombre-vendedor {
         font-size: 14px;
         font-weight: 400;
         color: $colorTerciario;
     }
+
     &__texto {
         line-height: 1.5;
         font-size: 14px;
         margin-bottom: 15px;
     }
+
     &__precio {
         font-size: 40px;
         font-weight: 700;
         margin-bottom: 15px;
     }
+
     &__raiting {
         font-size: 20px;
         color: $colorPrimarioLight;
@@ -109,6 +135,7 @@
             color: orange;
         }
     }
+
     &__boton {
         a {
         color: $colorSecundario;
@@ -133,7 +160,7 @@
         }
     }
     
-    // Iframe + Info /////////////////////////////////////////////////
+    // Iframe YT + Info /////////////////////////////////////////////////
     &__video {
         display: flex;
         justify-content: space-evenly;
@@ -147,7 +174,7 @@
         @media (max-width: $xl) {
             flex-direction: column;
         }
-        
+
         &--info {
             width: 100%;
             h3 {
@@ -220,11 +247,13 @@
             }
         }  
     }
+
     &__nombre {
         text-align: left;
         font-weight: 600;
         padding-left: 10px;
     }
+
     &__valor {
         text-align: left;
         font-weight: 300;
@@ -246,12 +275,12 @@
         text-align: center;
         @extend .titulo-gradient;
     }
-    &__caja {
-        
+    &__caja {  
         display: flex;
         flex-direction: column;
         gap: 20px;
-        // comentario usuario
+        
+        // comentario usuario //////////////////////////////////////////
         &--tarjeta {
             border: solid 1px $colorPrimarioLight;
             width: 100%;
@@ -317,7 +346,7 @@
             
         }
 
-        // comentario vendedor
+        // comentario vendedor ///////////////////////////////////////////
         &--tarjeta-vendedor {
             width: 80%;
             border-radius: 20px;
@@ -399,6 +428,7 @@
     &__intro {
         font-size: 18px;
         width: 100%;
+        
         h2 {
             font-size: 50px;
             padding: 100px 0 10px 30px;
@@ -412,6 +442,7 @@
                 font-size: 40px;
             }
         }
+        
         h3 {
             font-size: 26px;
             font-weight: 700;
@@ -420,11 +451,12 @@
                 font-size: 18px;
             }
         }
+
         p {
             padding: 0 30px 0 30px ;
         }
-
     }
+
     &__foto {
         width: 100%;
         height: 100%;
@@ -440,7 +472,7 @@
     }
 }
 
-// animación del bg //
+// animación del bg //////////////////////
 @keyframes zoom-bg {
     0% {
       transform: scale(1, 1);
@@ -458,20 +490,23 @@
     text-align: center;
     margin-bottom: 30px;
     &__titulo { 
-    h2 {
-        font-size: 36px;
-        font-weight: 700;
-        margin-bottom: 30px;
-        font-family: 'Abril Fatface', cursive;
-        color: $colorPrimario;
+    
+        h2 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            font-family: 'Abril Fatface', cursive;
+            color: $colorPrimario;
         }
     }
+    
     &__bg {
         padding: 0;
         background-color: $colorGrisClaro;
         padding-top: 50px;
         padding-bottom: 50px;
     }
+
     &__tarjetas {
         position: relative;
         margin-top: 32px;
@@ -481,12 +516,13 @@
             width: 5px;
             background-color: $colorPrimario;
             top: 0;
-            bottom: 0;
+            bottom: 140px;
             left: 50%;
             @media (max-width: $md) {
                 left: 32px;
             }
         }
+
         &--item {
             position: relative;
             background-color: inherit;
@@ -507,6 +543,7 @@
                 }
             }
         }
+
         &--contenido {
             padding: 32px;
             background-color: white;
@@ -514,16 +551,19 @@
             border-radius: 20px;
             box-shadow: $sombraSobreClaro;
             text-align: left;
+            
             p {
                 color: #2e1d35;
                 font-size: 18px;
             }
+            
             h2 {
                 font-family: 'Abril Fatface', cursive;
                 font-size: 25px;
                 color: #2e1d35;
             }
         }
+        
         &--anio {
             font-size: 22px;
             color: #ffffff;
@@ -538,8 +578,9 @@
             justify-content: center;
             z-index: 1;
             font-family: 'Abril Fatface', cursive;
-          }
+        }
     }
+
     &-linea {
         width: 40px;
         background-color: $colorPrimario;
@@ -591,7 +632,6 @@
                 }
             }
         }
-        
 
         &--data {
             padding: 10px;
@@ -607,7 +647,5 @@
                 font-weight: 700;
             }
         }
-
-    }
-   
+    }   
 }

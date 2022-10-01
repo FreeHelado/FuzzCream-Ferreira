@@ -1,3 +1,28 @@
+//////////////////////////
+//        ()            //
+//       (__)           //
+//      (____)          //
+//     (______)         //
+//    (________)        //
+//   (__________)       //
+//    \/\/\/\/\/        //
+//     \/\/\/\/         //
+//      \/\/\/          //
+//       \/\/           //
+//        \/            //
+// BG General //
+// Formulario Bootstrap //
+// ANIMACION //
+    // Elementos //
+    // KeyFrames //
+        // KF-Teclado //
+        // KF-Bajo //
+        // KF-Sombra //
+        // KF-shake-Hover //
+        // KF-Barras EQ //
+///////////////////////////
+
+// BG General /////////////////////////////////////////////////////////
 .publicar__bg {
     background-color: $colorPrimario;
     color: #fff;
@@ -6,6 +31,7 @@
     }
 }
 
+// Formulario Bootstrap //////////////////////////////////////////////
 .publicar__form--b {
     border: solid 1px $borde;
     padding: 25px;
@@ -21,6 +47,7 @@
         font-weight: 700;
         font-size: 18px;
     }
+
     input {
         background-color: $campo;
         border-color: $borde;
@@ -31,6 +58,7 @@
             color: #fff;
         } 
     }
+
     select {
         background-color: $campo;
         border-color: $borde;
@@ -41,6 +69,7 @@
             color: #fff;
         }
     }
+
     textarea {
         background-color: $campo;
         border-color: $borde;
@@ -51,6 +80,7 @@
             color: #fff;
         }
     }
+
     a {
         color: #fff;
         text-decoration: none;
@@ -62,13 +92,15 @@
     } 
 }
 
-// ANIMACIÓN //
+// ANIMACIÓN //////////////////////////////////////////////////////
 .animacion-instrumentos {
     position: relative;
     height: 700px;
     @media (max-width:$md) {
         display: none;
     }
+
+    // Elementos ///////////////////////////////////////////////////
     &__teclado {
         position: absolute;
         top: 50px;
@@ -126,6 +158,7 @@
             }
         }
     }
+
     &__sombra {
         height: 120px;
         width: 180px;
@@ -176,33 +209,13 @@
                 }
             }
         }
-        @keyframes barras {
-            10% {
-              transform: scaleY(0.3); 
-            }
-          
-            30% {
-              transform: scaleY(1); 
-            }
-          
-            60% {
-              transform: scaleY(0.5); 
-            }
-          
-            80% {
-              transform: scaleY(0.75); 
-            }
-          
-            100% {
-              transform: scaleY(0.6); 
-            }
-          }
     }
 }
 
 
-    // animaciones 
-    // animacion-teclado
+// KeyFrames //////////////////////////////////////////////////
+
+    // KF-Teclado ///////////////////
     @keyframes tecladoMove {
         0% {
             top: 20px;
@@ -215,8 +228,7 @@
         }
     }
 
-
-    // animacion-bajo
+    // KF-Bajo ///////////////////
     @keyframes bajoMove {
         0% {
             bottom: 20px;
@@ -229,7 +241,7 @@
         }
     }
 
-    // animacion-sombra
+    // KF-Sombra //
     @keyframes sombraMove {
         0% {
             height: 18px;
@@ -245,16 +257,69 @@
         }
     }
 
+    // KF-Shae //
     @keyframes shake {
-        0% { transform: translate(1px, 1px) rotate(0deg); }
-        10% { transform: translate(-1px, -2px) rotate(-1deg); }
-        20% { transform: translate(-3px, 0px) rotate(1deg); }
-        30% { transform: translate(3px, 2px) rotate(0deg); }
-        40% { transform: translate(1px, -1px) rotate(1deg); }
-        50% { transform: translate(-1px, 2px) rotate(-1deg); }
-        60% { transform: translate(-3px, 1px) rotate(0deg); }
-        70% { transform: translate(3px, 1px) rotate(-1deg); }
-        80% { transform: translate(-1px, -1px) rotate(1deg); }
-        90% { transform: translate(1px, 2px) rotate(0deg); }
-        100% { transform: translate(1px, -2px) rotate(-1deg); }
-      }
+        0% { 
+            transform: translate(1px, 1px); 
+            rotate: (0deg); 
+        }
+        10% { 
+            transform: translate(-1px, -2px); 
+            rotate: (-1deg); 
+        }
+        20% { 
+            transform: translate(-3px, 0px); 
+            rotate: (1deg); 
+        }
+        30% { 
+            transform: translate(3px, 2px);
+            rotate: (0deg); 
+        }
+        40% { 
+            transform: translate(1px, -1px); 
+            rotate: (1deg); 
+        }
+        50% { 
+            transform: translate(-1px, 2px); 
+            rotate: (-1deg); 
+        }
+        60% { 
+            transform: translate(-3px, 1px); 
+            rotate: (0deg); 
+        }
+        70% { 
+            transform: translate(3px, 1px); 
+            rotate: (-1deg); 
+        }
+        80% { 
+            transform: translate(-1px, -1px); 
+            rotate: (1deg); 
+        }
+        90% { 
+            transform: translate(1px, 2px); 
+            rotate: (0deg); 
+        }
+        100% { 
+            transform: translate(1px, -2px); 
+            rotate: (-1deg); 
+        }
+    }
+
+    // KF-Barras EQ //
+    @keyframes barras {
+        10% {
+          transform: scaleY(0.3); 
+        }
+        30% {
+          transform: scaleY(1); 
+        }
+        60% {
+          transform: scaleY(0.5); 
+        }
+        80% {
+          transform: scaleY(0.75); 
+        }
+        100% {
+          transform: scaleY(0.6); 
+        }
+    }
